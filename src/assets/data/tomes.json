@@ -70,7 +70,7 @@
     {
       "id": "import-a764f57e-f9d3-fad3-f3d34628",
       "tomeId": "tome-crusader-s-surge",
-      "tomeName": "Crusader'S Surge",
+      "tomeName": "Crusader's Surge",
       "rarity": "rare",
       "zone": "eastern-kingdoms",
       "x": 46.9,
@@ -239,7 +239,7 @@
     {
       "id": "import-e23a0a7e-d13a-d23a-cb3ae328",
       "tomeId": "tome-broodmother-s-webbing",
-      "tomeName": "Broodmother'S Webbing",
+      "tomeName": "Broodmother's Webbing",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.3,
@@ -299,7 +299,7 @@
     {
       "id": "import-15cc6fea-efc2-f0c2-f1c2b70c",
       "tomeId": "tome-crypt-lord-s-swarm",
-      "tomeName": "Crypt Lord'S Swarm",
+      "tomeName": "Crypt Lord's Swarm",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.2,
@@ -314,7 +314,7 @@
     {
       "id": "import-dc3f5e4a-f7df-f8df-f9df3b6c",
       "tomeId": "tome-drillmaster-s-rebuke",
-      "tomeName": "Drillmaster'S Rebuke",
+      "tomeName": "Drillmaster's Rebuke",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.9,
@@ -359,7 +359,7 @@
     {
       "id": "import-bba69033-bc07-bb07-c2074acd",
       "tomeId": "tome-emberlord-s-gift",
-      "tomeName": "Emberlord'S Gift",
+      "tomeName": "Emberlord's Gift",
       "rarity": "rare",
       "zone": "northrend",
       "x": 40.7,
@@ -374,7 +374,7 @@
     {
       "id": "import-25cbc293-64a9-63a9-6aa9b32d",
       "tomeId": "tome-eonar-s-seed",
-      "tomeName": "Eonar'S Seed",
+      "tomeName": "Eonar's Seed",
       "rarity": "epic",
       "zone": "northrend",
       "x": 56.6,
@@ -599,7 +599,7 @@
     {
       "id": "import-d7469af9-eb3c-ea3c-ed3c22b7",
       "tomeId": "tome-the-harvester-s-tithe",
-      "tomeName": "The Harvester'S Tithe",
+      "tomeName": "The Harvester's Tithe",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.3,
@@ -614,7 +614,7 @@
     {
       "id": "import-96f70bd9-82c4-81c4-84c42d97",
       "tomeId": "tome-the-sporelord-s-gift",
-      "tomeName": "The Sporelord'S Gift",
+      "tomeName": "The Sporelord's Gift",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.2,
@@ -629,7 +629,7 @@
     {
       "id": "import-424615eb-f4c6-f3c6-fac6de95",
       "tomeId": "tome-the-unclean-s-fever",
-      "tomeName": "The Unclean'S Fever",
+      "tomeName": "The Unclean's Fever",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.2,
@@ -644,7 +644,7 @@
     {
       "id": "import-2fa2d0a0-8c64-8d64-8a64d3ae",
       "tomeId": "tome-widow-s-venom",
-      "tomeName": "Widow'S Venom",
+      "tomeName": "Widow's Venom",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.1,
