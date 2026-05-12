@@ -70,7 +70,7 @@
     {
       "id": "import-a764f57e-f9d3-fad3-f3d34628",
       "tomeId": "tome-crusader-s-surge",
-      "tomeName": "Crusader's Surge",
+      "tomeName": "Crusader'S Surge",
       "rarity": "rare",
       "zone": "eastern-kingdoms",
       "x": 46.9,
@@ -239,7 +239,7 @@
     {
       "id": "import-e23a0a7e-d13a-d23a-cb3ae328",
       "tomeId": "tome-broodmother-s-webbing",
-      "tomeName": "Broodmother's Webbing",
+      "tomeName": "Broodmother'S Webbing",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.3,
@@ -299,7 +299,7 @@
     {
       "id": "import-15cc6fea-efc2-f0c2-f1c2b70c",
       "tomeId": "tome-crypt-lord-s-swarm",
-      "tomeName": "Crypt Lord's Swarm",
+      "tomeName": "Crypt Lord'S Swarm",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.2,
@@ -314,7 +314,7 @@
     {
       "id": "import-dc3f5e4a-f7df-f8df-f9df3b6c",
       "tomeId": "tome-drillmaster-s-rebuke",
-      "tomeName": "Drillmaster's Rebuke",
+      "tomeName": "Drillmaster'S Rebuke",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.9,
@@ -359,7 +359,7 @@
     {
       "id": "import-bba69033-bc07-bb07-c2074acd",
       "tomeId": "tome-emberlord-s-gift",
-      "tomeName": "Emberlord's Gift",
+      "tomeName": "Emberlord'S Gift",
       "rarity": "rare",
       "zone": "northrend",
       "x": 40.7,
@@ -374,7 +374,7 @@
     {
       "id": "import-25cbc293-64a9-63a9-6aa9b32d",
       "tomeId": "tome-eonar-s-seed",
-      "tomeName": "Eonar's Seed",
+      "tomeName": "Eonar'S Seed",
       "rarity": "epic",
       "zone": "northrend",
       "x": 56.6,
@@ -492,21 +492,6 @@
       "notes": "Source: Raid"
     },
     {
-      "id": "import-55d2d1cf-9b70-9a70-9970c001",
-      "tomeId": "tome-permafrost",
-      "tomeName": "Permafrost",
-      "rarity": "rare",
-      "zone": "northrend",
-      "x": 79.7,
-      "y": 69.8,
-      "placeName": "Frozen Glade, left of Giants' Run",
-      "mobs": [
-        "Ice Elementals / Ice Revenants"
-      ],
-      "specs": [],
-      "notes": "Source: Open World"
-    },
-    {
       "id": "import-faeb4c7d-616a-606a-5b6a6463",
       "tomeId": "tome-polarity-shift",
       "tomeName": "Polarity Shift",
@@ -599,7 +584,7 @@
     {
       "id": "import-d7469af9-eb3c-ea3c-ed3c22b7",
       "tomeId": "tome-the-harvester-s-tithe",
-      "tomeName": "The Harvester's Tithe",
+      "tomeName": "The Harvester'S Tithe",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.3,
@@ -614,7 +599,7 @@
     {
       "id": "import-96f70bd9-82c4-81c4-84c42d97",
       "tomeId": "tome-the-sporelord-s-gift",
-      "tomeName": "The Sporelord's Gift",
+      "tomeName": "The Sporelord'S Gift",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.2,
@@ -629,7 +614,7 @@
     {
       "id": "import-424615eb-f4c6-f3c6-fac6de95",
       "tomeId": "tome-the-unclean-s-fever",
-      "tomeName": "The Unclean's Fever",
+      "tomeName": "The Unclean'S Fever",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.2,
@@ -644,7 +629,7 @@
     {
       "id": "import-2fa2d0a0-8c64-8d64-8a64d3ae",
       "tomeId": "tome-widow-s-venom",
-      "tomeName": "Widow's Venom",
+      "tomeName": "Widow'S Venom",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.1,
@@ -915,6 +900,24 @@
         "ranged-dps"
       ],
       "notes": "You need to deal fire damage"
+    },
+    {
+      "id": "7cce8b91-deb3-4f41-8868-0b4413e95ce7",
+      "tomeId": "tome-permafrost",
+      "tomeName": "Permafrost Aura",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 35.9,
+      "y": 58.6,
+      "placeName": "Dragonblight - Coldwind Pass",
+      "mobs": [
+        "Frozen Elemental"
+      ],
+      "specs": [
+        "tank",
+        "melee-dps"
+      ],
+      "notes": "Be careful, they can stunlock-bump you if you can't kill them fast enough"
     }
   ]
 }

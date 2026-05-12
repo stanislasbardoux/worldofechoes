@@ -64,6 +64,7 @@
         [allLocations]="tomes.locations()"
         (saved)="onFormSaved($event)"
         (cancelled)="onFormCancelled()"
+        (deleted)="deleteLocation($event)"
         (coordsChanged)="onFormCoordsChanged($event)"
       />
     } @else {

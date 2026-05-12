@@ -75,10 +75,14 @@
 
   &__actions {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
     gap: 8px;
     border-top: 1px solid var(--woe-border);
     padding-top: 12px;
+  }
+
+  &__actions-spacer {
+    flex: 1 1 auto;
   }
 
   &__primary {
@@ -89,6 +93,16 @@
 
     &:hover {
       background: #ffd87a;
+    }
+  }
+
+  &__danger {
+    background: var(--woe-danger);
+    border-color: var(--woe-danger);
+    color: #fff;
+
+    &:hover {
+      background: #e0533f;
     }
   }
 }

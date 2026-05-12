@@ -50,6 +50,10 @@ export class TomeFormComponent implements OnChanges {
 
   @Output() saved = new EventEmitter<FarmLocation>();
   @Output() cancelled = new EventEmitter<void>();
+  /** Fires when the user clicks the Delete button while editing an
+   *  existing pin. The parent is in charge of confirming + actually
+   *  removing the location from the data store. */
+  @Output() deleted = new EventEmitter<FarmLocation>();
   /** Fires while the user is typing in the X / Y inputs, so the
    *  parent can move the pin on the map in real time. */
   @Output() coordsChanged = new EventEmitter<{ x: number; y: number }>();
@@ -189,6 +193,12 @@ export class TomeFormComponent implements OnChanges {
     };
 
     this.saved.emit(location);
+  }
+
+  protected onDelete(): void {
+    if (this.initial) {
+      this.deleted.emit(this.initial);
+    }
   }
 
   private slug(s: string): string {

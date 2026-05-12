@@ -111,6 +111,16 @@
   </div>
 
   <div class="tome-form__actions">
+    @if (initial) {
+      <button
+        type="button"
+        class="tome-form__danger"
+        (click)="onDelete()"
+      >
+        Delete
+      </button>
+    }
+    <span class="tome-form__actions-spacer"></span>
     <button type="button" (click)="cancelled.emit()">Cancel</button>
     <button type="submit" class="tome-form__primary">
       {{ initial ? 'Save changes' : 'Create' }}
