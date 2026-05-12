@@ -812,6 +812,44 @@
       ],
       "specs": [],
       "notes": "Source: Dungeon"
+    },
+    {
+      "id": "53ac548a-bc74-4741-8257-de0317a56d6e",
+      "tomeId": "tome-weapon-mastery",
+      "tomeName": "Weapon Mastery",
+      "rarity": "epic",
+      "zone": "eastern-kingdoms",
+      "x": 54.6,
+      "y": 67.1,
+      "placeName": "Redridge Mountain - Render's Rock",
+      "mobs": [
+        "Blackrock Champion"
+      ],
+      "specs": [
+        "tank",
+        "caster-dps",
+        "melee-dps",
+        "ranged-dps"
+      ],
+      "notes": "Easier farm than shattered halls and if you have echoes that attract mobs to you, you can find a few spots to make your farming really efficient and get more and get better droprate/h."
+    },
+    {
+      "id": "ae237bf8-19d6-44f4-8fd7-e898437e548b",
+      "tomeId": "tome-battle-rhythm",
+      "tomeName": "Battle Rhythm",
+      "rarity": "rare",
+      "zone": "eastern-kingdoms",
+      "x": 54.5,
+      "y": 67.1,
+      "placeName": "Redrige Mountain - Render's Rock",
+      "mobs": [
+        "Blackrock Champion"
+      ],
+      "specs": [
+        "caster-dps",
+        "melee-dps",
+        "ranged-dps"
+      ]
     }
   ]
 }
