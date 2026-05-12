@@ -130,7 +130,7 @@
     {
       "id": "manual-reaper-doom-001",
       "tomeId": "tome-reaper-s-doom",
-      "tomeName": "Reaper'S Doom",
+      "tomeName": "Reaper's Doom",
       "rarity": "epic",
       "zone": "kalimdor",
       "x": 91.2,
@@ -139,23 +139,31 @@
       "mobs": [
         "Reaper"
       ],
-      "specs": [],
-      "notes": "Source: Open World"
+      "specs": [
+        "caster-dps",
+        "melee-dps",
+        "ranged-dps"
+      ],
+      "notes": "Spawn and defeat the Reaper after fighting for 10 minutes straight at Intensity 5. Hard fight."
     },
     {
       "id": "manual-reaper-verdict-001",
       "tomeId": "tome-reaper-s-verdict",
-      "tomeName": "Reaper'S Verdict",
+      "tomeName": "Reaper's Verdict",
       "rarity": "epic",
       "zone": "kalimdor",
-      "x": 91,
-      "y": 6.3,
-      "placeName": "Unknown — to be placed",
+      "x": 91.3,
+      "y": 4.4,
+      "placeName": "Anywhere",
       "mobs": [
         "Reaper"
       ],
-      "specs": [],
-      "notes": "Source: Open World"
+      "specs": [
+        "caster-dps",
+        "melee-dps",
+        "ranged-dps"
+      ],
+      "notes": "Spawn and defeat the Reaper after fighting for 10 minutes straight at Intensity 5. Hard fight."
     },
     {
       "id": "manual-relentless-energy-001",
@@ -168,7 +176,7 @@
       "placeName": "Unknown — to be placed",
       "mobs": [],
       "specs": [],
-      "notes": "Same as Subtle Presence"
+      "notes": "Same as Subtle Presence\nFor energy-based classes (rogues, cat druids)"
     },
     {
       "id": "import-f832a3c9-7acd-79cd-7ccd5e87",
@@ -206,8 +214,8 @@
       "tomeName": "Subtle Presence",
       "rarity": "rare",
       "zone": "kalimdor",
-      "x": 85.5,
-      "y": 6.3,
+      "x": 85.6,
+      "y": 4.4,
       "placeName": "Unknown — to be placed",
       "mobs": [],
       "specs": [],
@@ -850,6 +858,63 @@
         "melee-dps",
         "ranged-dps"
       ]
+    },
+    {
+      "id": "5e721156-2eff-4f78-ac52-01d37366ec98",
+      "tomeId": "tome-reaper-s-reprieve",
+      "tomeName": "Reaper's Reprieve",
+      "rarity": "rare",
+      "zone": "kalimdor",
+      "x": 91.4,
+      "y": 5.3,
+      "placeName": "Anywhere",
+      "mobs": [
+        "Reaper"
+      ],
+      "specs": [
+        "tank",
+        "caster-dps",
+        "melee-dps",
+        "ranged-dps"
+      ],
+      "notes": "Spawn and defeat the Reaper after fighting for 10 minutes straight at Intensity 5. Hard fight."
+    },
+    {
+      "id": "eb79874c-4bb6-4773-be13-1b792626a439",
+      "tomeId": "tome-storm-of-the-spellweaver",
+      "tomeName": "Storm of the Spellweaver",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 15,
+      "y": 57.3,
+      "placeName": "Coldarra - Eye of Eternity",
+      "mobs": [
+        "Malygos"
+      ],
+      "specs": [
+        "caster-dps",
+        "melee-dps",
+        "ranged-dps"
+      ]
+    },
+    {
+      "id": "9ed6b265-1c97-41d5-aaac-847e14382fb9",
+      "tomeId": "tome-cinders-of-the-sanctum",
+      "tomeName": "Cinders of the Sanctum",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 50.4,
+      "y": 60.4,
+      "placeName": "Dragonblight - Obsidian Sanctum",
+      "mobs": [
+        "Sartharion"
+      ],
+      "specs": [
+        "caster-dps",
+        "melee-dps",
+        "ranged-dps"
+      ],
+      "notes": "You need to deal fire damage"
     }
   ]
 }
