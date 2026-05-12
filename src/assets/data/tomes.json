@@ -1,0 +1,817 @@
+{
+  "zones": [
+    {
+      "id": "eastern-kingdoms",
+      "name": "Eastern Kingdoms",
+      "imageUrl": "assets/maps/eastern-kingdoms.webp"
+    },
+    {
+      "id": "kalimdor",
+      "name": "Kalimdor",
+      "imageUrl": "assets/maps/kalimdor.webp"
+    },
+    {
+      "id": "outland",
+      "name": "Outland",
+      "imageUrl": "assets/maps/outland.webp"
+    },
+    {
+      "id": "northrend",
+      "name": "Northrend",
+      "imageUrl": "assets/maps/northrend.webp"
+    }
+  ],
+  "locations": [
+    {
+      "id": "import-a20bc54b-51cd-50cd-57cdc275",
+      "tomeId": "tome-arcane-density",
+      "tomeName": "Arcane Density",
+      "rarity": "rare",
+      "zone": "eastern-kingdoms",
+      "x": 46.5,
+      "y": 9.3,
+      "placeName": "Hearthglen",
+      "mobs": [
+        "Scarlet Paladins"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-9fbf6ac4-567c-577c-5c7c0daa",
+      "tomeId": "tome-arcane-surge",
+      "tomeName": "Arcane Surge",
+      "rarity": "rare",
+      "zone": "eastern-kingdoms",
+      "x": 29,
+      "y": 95.4,
+      "placeName": "just outside booty bay",
+      "mobs": [
+        "Bloodsail Mage/Raider"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-93cabd65-0325-0225-fd25373b",
+      "tomeId": "tome-battle-rhythm",
+      "tomeName": "Battle Rhythm",
+      "rarity": "rare",
+      "zone": "eastern-kingdoms",
+      "x": 47.9,
+      "y": 61.6,
+      "placeName": "Blackrock Stronghold",
+      "mobs": [
+        "Blackrock Stronghold mobs"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-a764f57e-f9d3-fad3-f3d34628",
+      "tomeId": "tome-crusader-s-surge",
+      "tomeName": "Crusader'S Surge",
+      "rarity": "rare",
+      "zone": "eastern-kingdoms",
+      "x": 46.9,
+      "y": 9.5,
+      "placeName": "Hearthglen",
+      "mobs": [
+        "Scarlet Paladins"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-77191360-3d35-3e35-3b35b46e",
+      "tomeId": "tome-crushing-finish",
+      "tomeName": "Crushing Finish",
+      "rarity": "rare",
+      "zone": "eastern-kingdoms",
+      "x": 47.3,
+      "y": 61.5,
+      "placeName": "Blackrock Stronghold",
+      "mobs": [
+        "Blackrock Slayer"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-64e346c9-82ee-81ee-84ee3987",
+      "tomeId": "tome-fortress-soul",
+      "tomeName": "Fortress Soul",
+      "rarity": "rare",
+      "zone": "eastern-kingdoms",
+      "x": 48.9,
+      "y": 13.4,
+      "placeName": "Scarlet Encampments",
+      "mobs": [
+        "Scarlet Knights"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-acc3f50b-5d9a-5c9a-639ad835",
+      "tomeId": "tome-the-last-wall",
+      "tomeName": "The Last Wall",
+      "rarity": "rare",
+      "zone": "eastern-kingdoms",
+      "x": 35.2,
+      "y": 22.6,
+      "placeName": "Alterac Mountains",
+      "mobs": [
+        "Giant Yetis"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "manual-reaper-doom-001",
+      "tomeId": "tome-reaper-s-doom",
+      "tomeName": "Reaper'S Doom",
+      "rarity": "epic",
+      "zone": "kalimdor",
+      "x": 91.2,
+      "y": 3.6,
+      "placeName": "Unknown — to be placed",
+      "mobs": [
+        "Reaper"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "manual-reaper-verdict-001",
+      "tomeId": "tome-reaper-s-verdict",
+      "tomeName": "Reaper'S Verdict",
+      "rarity": "epic",
+      "zone": "kalimdor",
+      "x": 91,
+      "y": 6.3,
+      "placeName": "Unknown — to be placed",
+      "mobs": [
+        "Reaper"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "manual-relentless-energy-001",
+      "tomeId": "tome-relentless-energy",
+      "tomeName": "Relentless Energy",
+      "rarity": "rare",
+      "zone": "kalimdor",
+      "x": 85.7,
+      "y": 3.6,
+      "placeName": "Unknown — to be placed",
+      "mobs": [],
+      "specs": [],
+      "notes": "Same as Subtle Presence"
+    },
+    {
+      "id": "import-f832a3c9-7acd-79cd-7ccd5e87",
+      "tomeId": "tome-resonant-build",
+      "tomeName": "Resonant Build",
+      "rarity": "epic",
+      "zone": "kalimdor",
+      "x": 31.6,
+      "y": 82.1,
+      "placeName": "Southwind Village",
+      "mobs": [
+        "Tortured Druids"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-7f695aa7-689e-679e-669edce9",
+      "tomeId": "tome-storm-surge",
+      "tomeName": "Storm Surge",
+      "rarity": "rare",
+      "zone": "kalimdor",
+      "x": 32.3,
+      "y": 72,
+      "placeName": "Feralas",
+      "mobs": [
+        "Grimtotem mobs"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "manual-subtle-presence-001",
+      "tomeId": "tome-subtle-presence",
+      "tomeName": "Subtle Presence",
+      "rarity": "rare",
+      "zone": "kalimdor",
+      "x": 85.5,
+      "y": 6.3,
+      "placeName": "Unknown — to be placed",
+      "mobs": [],
+      "specs": [],
+      "notes": "Same mobs that drop Relentless Energy"
+    },
+    {
+      "id": "import-657cbea7-cc3a-cb3a-ca3ae0e9",
+      "tomeId": "tome-brittle-forging",
+      "tomeName": "Brittle Forging",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.4,
+      "y": 12.3,
+      "placeName": "Ulduar",
+      "mobs": [
+        "Ignis the Furnace Master"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-e23a0a7e-d13a-d23a-cb3ae328",
+      "tomeId": "tome-broodmother-s-webbing",
+      "tomeName": "Broodmother'S Webbing",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.3,
+      "y": 58.6,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "Maexxna"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-91adf275-5670-5570-50701b4b",
+      "tomeId": "tome-call-of-the-lich-king",
+      "tomeName": "Call Of The Lich King",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.3,
+      "y": 58.6,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "Kel'Thuzad"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-0661349e-a43c-a53c-9e3c9fc8",
+      "tomeId": "tome-chill-of-the-bone-wyrm",
+      "tomeName": "Chill Of The Bone Wyrm",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.2,
+      "y": 58.7,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "Sapphiron"
+      ],
+      "specs": [],
+      "notes": "Source: Raid\n\nhttps://www.wowhead.com/wotlk/npc=15989/sapphiron"
+    },
+    {
+      "id": "import-242363ad-b327-b227-ad277d13",
+      "tomeId": "tome-constellations",
+      "tomeName": "Constellations",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 57.5,
+      "y": 12.2,
+      "placeName": "Ulduar",
+      "mobs": [
+        "Algalon the Observer"
+      ],
+      "specs": [],
+      "notes": "Source: Raid\n\nIn order to access the boss you need a [Celestial Planetarium Key] of correct type 10/25 man    https://www.wowhead.com/wotlk/item=45796/celestial-planetarium-key"
+    },
+    {
+      "id": "import-15cc6fea-efc2-f0c2-f1c2b70c",
+      "tomeId": "tome-crypt-lord-s-swarm",
+      "tomeName": "Crypt Lord'S Swarm",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.2,
+      "y": 58.7,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "Anub'Rekhan"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-dc3f5e4a-f7df-f8df-f9df3b6c",
+      "tomeId": "tome-drillmaster-s-rebuke",
+      "tomeName": "Drillmaster'S Rebuke",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.9,
+      "y": 11.2,
+      "placeName": "Ulduar",
+      "mobs": [
+        "Instructor Razuvious"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-25326870-e1f3-e2f3-dff3b87e",
+      "tomeId": "tome-edict-of-the-four",
+      "tomeName": "Edict Of The Four",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.2,
+      "y": 58.2,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "The Four Horsemen"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-f4e0ff0b-dc47-db47-e247f235",
+      "tomeId": "tome-edict-of-the-iron-council",
+      "tomeName": "Edict Of The Iron Council",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.6,
+      "y": 10.7,
+      "placeName": "Ulduar",
+      "mobs": [
+        "Assembly of Iron"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-bba69033-bc07-bb07-c2074acd",
+      "tomeId": "tome-emberlord-s-gift",
+      "tomeName": "Emberlord'S Gift",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 40.7,
+      "y": 52.1,
+      "placeName": "Bottom right corner",
+      "mobs": [
+        "Fire elementals"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-25cbc293-64a9-63a9-6aa9b32d",
+      "tomeId": "tome-eonar-s-seed",
+      "tomeName": "Eonar'S Seed",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 56.6,
+      "y": 9.6,
+      "placeName": "Ulduar",
+      "mobs": [
+        "Freya"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-62b8a2d2-032d-042d-052d1be4",
+      "tomeId": "tome-exposed-heart",
+      "tomeName": "Exposed Heart",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 59.1,
+      "y": 10,
+      "placeName": "Ulduar",
+      "mobs": [
+        "XT-002 Deconstructor"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-22703cec-c8b2-c9b2-ceb2dce2",
+      "tomeId": "tome-flame-vents",
+      "tomeName": "Flame Vents",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.2,
+      "y": 11.4,
+      "placeName": "Ulduar",
+      "mobs": [
+        "Flame Leviathan"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-64dd9333-6105-6005-670585cd",
+      "tomeId": "tome-frostfire-paradox",
+      "tomeName": "Frostfire Paradox",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 56.7,
+      "y": 11.8,
+      "placeName": "Ulduar",
+      "mobs": [
+        "Hodir"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-9d3d0501-50fb-4ffb-52fb304f",
+      "tomeId": "tome-hungering-curse",
+      "tomeName": "Hungering Curse",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 34.3,
+      "y": 47.6,
+      "placeName": "Wintergrasp west side, near blackened area",
+      "mobs": [
+        "Wandering Shadow"
+      ],
+      "specs": [],
+      "notes": "Source: Open World\n\nhttps://www.wowhead.com/wotlk/npc=30842/wandering-shadow"
+    },
+    {
+      "id": "import-6b39acd7-0cea-0bea-0aeaf219",
+      "tomeId": "tome-idol-of-yogg-saron",
+      "tomeName": "Idol Of Yogg-Saron",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.3,
+      "y": 9.4,
+      "placeName": "Ulduar",
+      "mobs": [
+        "Yogg-Saron"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-dd318fb3-bacd-b9cd-c0cd164d",
+      "tomeId": "tome-lightning-charged",
+      "tomeName": "Lightning Charged",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 57.4,
+      "y": 9.3,
+      "placeName": "Ulduar",
+      "mobs": [
+        "Thorim"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-37bf619d-9156-9056-8b568403",
+      "tomeId": "tome-mutagenic-fumes",
+      "tomeName": "Mutagenic Fumes",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.3,
+      "y": 58.6,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "Grobbulus"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-55d2d1cf-9b70-9a70-9970c001",
+      "tomeId": "tome-permafrost",
+      "tomeName": "Permafrost",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 79.7,
+      "y": 69.8,
+      "placeName": "Frozen Glade, left of Giants' Run",
+      "mobs": [
+        "Ice Elementals / Ice Revenants"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-faeb4c7d-616a-606a-5b6a6463",
+      "tomeId": "tome-polarity-shift",
+      "tomeName": "Polarity Shift",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.2,
+      "y": 58.4,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "Thaddius"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-bfff90d7-e8bd-e7bd-e6bd7619",
+      "tomeId": "tome-ravenous-bellow",
+      "tomeName": "Ravenous Bellow",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.2,
+      "y": 58.3,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "Gluth"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-a9775c85-69a5-68a5-63a5f0db",
+      "tomeId": "tome-rocket-strike",
+      "tomeName": "Rocket Strike",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 56.7,
+      "y": 10.5,
+      "placeName": "Ulduar",
+      "mobs": [
+        "Mimiron"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-d65a040e-a354-a454-9d549438",
+      "tomeId": "tome-sanctum-sentries",
+      "tomeName": "Sanctum Sentries",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 57.6,
+      "y": 10.6,
+      "placeName": "Ulduar",
+      "mobs": [
+        "Auriaya"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-0cea3d9d-24c2-23c2-1ec2c003",
+      "tomeId": "tome-shadow-crash",
+      "tomeName": "Shadow Crash",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 57.3,
+      "y": 11.2,
+      "placeName": "Ulduar",
+      "mobs": [
+        "General Vezax"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-5d561a2a-b6dc-b7dc-b8dc0b4c",
+      "tomeId": "tome-static-overflow",
+      "tomeName": "Static Overflow",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 38.3,
+      "y": 53.1,
+      "placeName": "Bottom right corner next to fire place",
+      "mobs": [
+        "Whispering Wind"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-d7469af9-eb3c-ea3c-ed3c22b7",
+      "tomeId": "tome-the-harvester-s-tithe",
+      "tomeName": "The Harvester'S Tithe",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.3,
+      "y": 58.4,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "Gothik the Harvester"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-96f70bd9-82c4-81c4-84c42d97",
+      "tomeId": "tome-the-sporelord-s-gift",
+      "tomeName": "The Sporelord'S Gift",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.2,
+      "y": 58.5,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "Loatheb"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-424615eb-f4c6-f3c6-fac6de95",
+      "tomeId": "tome-the-unclean-s-fever",
+      "tomeName": "The Unclean'S Fever",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.2,
+      "y": 58.2,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "Heigan the Unclean"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-2fa2d0a0-8c64-8d64-8a64d3ae",
+      "tomeId": "tome-widow-s-venom",
+      "tomeName": "Widow'S Venom",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 58.1,
+      "y": 58.4,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "Grand Widow Faerlina"
+      ],
+      "specs": [],
+      "notes": "Source: Raid"
+    },
+    {
+      "id": "import-3e6d4f5a-8369-8469-85693b7c",
+      "tomeId": "tome-adaptive-power",
+      "tomeName": "Adaptive Power",
+      "rarity": "epic",
+      "zone": "outland",
+      "x": 48.7,
+      "y": 76.8,
+      "placeName": "Tomb of Lights",
+      "mobs": [
+        "Ethereal Nethermancer"
+      ],
+      "specs": [],
+      "notes": "Source: Open World\n\nhttps://www.wowhead.com/wotlk/npc=21405/ethereal-arcanist"
+    },
+    {
+      "id": "import-74bacd4d-3d77-3c77-37770eb3",
+      "tomeId": "tome-arcane-burn",
+      "tomeName": "Arcane Burn",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 40.3,
+      "y": 18.3,
+      "placeName": "Bash'ir Landing",
+      "mobs": [
+        "Ethereal mobs"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-013bfb59-d22d-d12d-d42d6917",
+      "tomeId": "tome-arcane-cadence",
+      "tomeName": "Arcane Cadence",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 48.7,
+      "y": 76.5,
+      "placeName": "Tomb of Lights",
+      "mobs": [
+        "Ethereal Plunderers/Arcanists"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-c0be9c6b-514e-504e-574f0915",
+      "tomeId": "tome-divine-surge",
+      "tomeName": "Divine Surge",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 57.4,
+      "y": 53.5,
+      "placeName": "The Shattered Halls",
+      "mobs": [
+        "Shattered Hand Zealot"
+      ],
+      "specs": [],
+      "notes": "Source: Dungeon\n\nhttps://www.wowhead.com/wotlk/npc=17462/shattered-hand-zealot"
+    },
+    {
+      "id": "import-c5ed8628-2674-2774-2474a446",
+      "tomeId": "tome-entropic-fusion",
+      "tomeName": "Entropic Fusion",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 35.1,
+      "y": 24.6,
+      "placeName": "Forge Camp: Wrath",
+      "mobs": [
+        "Demons"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-df7cd4d3-957c-947c-9b7caf6d",
+      "tomeId": "tome-fel-surge",
+      "tomeName": "Fel Surge",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 48.8,
+      "y": 76.7,
+      "placeName": "Tomb of Lights",
+      "mobs": [
+        "Ethereal Necromancer"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-3e156956-b7de-b8de-b1ddfa90",
+      "tomeId": "tome-healing-cadence",
+      "tomeName": "Healing Cadence",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 48.2,
+      "y": 66,
+      "placeName": "southern path toward Nagrand/Shattrath (packs of 3 Seers)",
+      "mobs": [
+        "Seers"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-bec82488-24f7-25f7-22f78f26",
+      "tomeId": "tome-nature-surge",
+      "tomeName": "Nature Surge",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 41.8,
+      "y": 57.3,
+      "placeName": "Zangarmarsh",
+      "mobs": [
+        "Seers"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-da19aa93-492d-482d-4f2ddb2d",
+      "tomeId": "tome-raging-momentum",
+      "tomeName": "Raging Momentum",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 57.4,
+      "y": 53.4,
+      "placeName": "Shattered Halls",
+      "mobs": [
+        "Warrior‑type mobs without shields or Execute"
+      ],
+      "specs": [],
+      "notes": "Source: Dungeon"
+    },
+    {
+      "id": "import-2393b74b-1fe3-1ee3-25e40475",
+      "tomeId": "tome-unstable-missiles",
+      "tomeName": "Unstable Missiles",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 40,
+      "y": 18.4,
+      "placeName": "Bash'ir Landing",
+      "mobs": [
+        "Bash’ir Ethereals"
+      ],
+      "specs": [],
+      "notes": "Source: Open World"
+    },
+    {
+      "id": "import-e7a1d9fb-8aaa-89aa-90aa69a5",
+      "tomeId": "tome-weapon-mastery",
+      "tomeName": "Weapon Mastery",
+      "rarity": "epic",
+      "zone": "outland",
+      "x": 57.6,
+      "y": 53.5,
+      "placeName": "Shattered Halls",
+      "mobs": [
+        "Warrior mobs"
+      ],
+      "specs": [],
+      "notes": "Source: Dungeon"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+<form class="tome-form" (submit)="$event.preventDefault(); submit()">
+  <h2 class="tome-form__title">
+    {{ initial ? 'Edit location' : 'New location' }}
+  </h2>
+
+  <div class="tome-form__grid">
+    <div>
+      <label for="tome-name">Tome name</label>
+      <input
+        id="tome-name"
+        name="tomeName"
+        type="text"
+        [(ngModel)]="tomeName"
+        (blur)="onTomeNameBlur()"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="rarity">Rarity</label>
+      <select id="rarity" name="rarity" [(ngModel)]="rarity">
+        <option value="epic">Epic (purple)</option>
+        <option value="rare">Rare (blue)</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="zone">Zone</label>
+      <select id="zone" name="zone" [(ngModel)]="zone">
+        @for (z of zones; track z.id) {
+          <option [value]="z.id">{{ z.name }}</option>
+        }
+      </select>
+    </div>
+
+    <div class="tome-form__full">
+      <label>
+        Coordinates (drag the pin on the map to adjust)
+      </label>
+      <div class="tome-form__coords">
+        <div>
+          <label for="x" class="tome-form__sublabel">X (%)</label>
+          <input
+            id="x"
+            name="x"
+            type="number"
+            step="0.1"
+            min="0"
+            max="100"
+            [(ngModel)]="xCoord"
+            (ngModelChange)="onCoordInput()"
+          />
+        </div>
+        <div>
+          <label for="y" class="tome-form__sublabel">Y (%)</label>
+          <input
+            id="y"
+            name="y"
+            type="number"
+            step="0.1"
+            min="0"
+            max="100"
+            [(ngModel)]="yCoord"
+            (ngModelChange)="onCoordInput()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="tome-form__full">
+      <label for="place">Farm location name</label>
+      <input
+        id="place"
+        name="placeName"
+        type="text"
+        [(ngModel)]="placeName"
+        required
+      />
+    </div>
+
+    <div class="tome-form__full">
+      <label for="mobs">Mobs (one per line)</label>
+      <textarea
+        id="mobs"
+        name="mobs"
+        rows="4"
+        [(ngModel)]="mobsRaw"
+      ></textarea>
+    </div>
+
+    <div class="tome-form__full">
+      <label>Recommended specs</label>
+      <div class="tome-form__specs">
+        @for (spec of allSpecs; track spec) {
+          <label class="tome-form__spec">
+            <input
+              type="checkbox"
+              [name]="'spec-' + spec"
+              [(ngModel)]="specs[spec]"
+            />
+            <span>{{ specLabels[spec] }}</span>
+          </label>
+        }
+      </div>
+    </div>
+
+    <div class="tome-form__full">
+      <label for="notes">Notes (optional)</label>
+      <textarea id="notes" name="notes" rows="2" [(ngModel)]="notes"></textarea>
+    </div>
+  </div>
+
+  <div class="tome-form__actions">
+    <button type="button" (click)="cancelled.emit()">Cancel</button>
+    <button type="submit" class="tome-form__primary">
+      {{ initial ? 'Save changes' : 'Create' }}
+    </button>
+  </div>
+</form>

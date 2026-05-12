@@ -1,0 +1,56 @@
+<div class="search-box" [class.is-open]="open() && hasResults()">
+  <span class="search-box__icon" aria-hidden="true">⌕</span>
+  <input
+    #input
+    type="search"
+    role="combobox"
+    placeholder="Search a Tome of Echo…"
+    autocomplete="off"
+    spellcheck="false"
+    aria-label="Search a Tome of Echo"
+    [attr.aria-expanded]="open() && hasResults()"
+    aria-controls="search-box-listbox"
+    [value]="query()"
+    (input)="onQueryChange($any($event.target).value)"
+    (focus)="onFocus()"
+    (keydown)="onKeydown($event)"
+  />
+
+  @if (open() && hasResults()) {
+    <ul
+      id="search-box-listbox"
+      class="search-box__list"
+      role="listbox"
+    >
+      @for (result of results(); track result.tomeId; let i = $index) {
+        <li
+          role="option"
+          [attr.aria-selected]="i === activeIndex()"
+          class="search-box__item"
+          [class.is-active]="i === activeIndex()"
+          (mousedown)="$event.preventDefault(); pick(result)"
+          (mouseenter)="activeIndex.set(i)"
+        >
+          <span
+            class="search-box__name"
+            [class.rarity-epic]="result.rarity === 'epic'"
+            [class.rarity-rare]="result.rarity === 'rare'"
+          >
+            {{ result.tomeName }}
+          </span>
+          <span class="search-box__meta">
+            {{ zoneSummary(result) }}
+            <span class="search-box__count">
+              {{ result.locations.length }}
+              {{ result.locations.length === 1 ? 'spot' : 'spots' }}
+            </span>
+          </span>
+        </li>
+      }
+    </ul>
+  } @else if (open() && query()) {
+    <div class="search-box__empty" role="status">
+      No tome matches “{{ query() }}”.
+    </div>
+  }
+</div>

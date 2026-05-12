@@ -1,0 +1,113 @@
+<woe-zone-switcher
+  [zones]="tomes.zones()"
+  [currentZoneId]="selectedZoneId()"
+  (zoneSelected)="onZoneChanged($event)"
+/>
+
+<div class="admin__toolbar">
+  <label class="admin__toggle">
+    <input
+      type="checkbox"
+      [checked]="placementMode()"
+      (change)="togglePlacement()"
+    />
+    Click-to-place new pin
+  </label>
+
+  <span class="admin__spacer"></span>
+
+  <button type="button" (click)="exportJson()">Download tomes.json</button>
+  <button type="button" (click)="discardDraft()">Discard draft</button>
+</div>
+
+<div class="admin__body">
+  <div class="admin__map-wrapper">
+    @if (currentZone()) {
+      <woe-map-viewer
+        [zone]="currentZone()!"
+        [locations]="visibleLocations()"
+        [selectedLocationId]="selectedLocationId()"
+        [placementMode]="placementMode()"
+        [editingLocationId]="editingLocationId()"
+        [draftPin]="draftPin()"
+        (markerClicked)="onMarkerClicked($event)"
+        (mapClicked)="onMapClicked($event)"
+        (pinDragged)="onPinDragged($event)"
+      />
+    }
+  </div>
+
+  <aside class="admin__sidebar" [class.is-editing]="editor().open">
+    @if (editor().open) {
+      <header class="admin__editor-head">
+        <h3 class="admin__editor-title">
+          {{ editor().initial ? 'Edit location' : 'New location' }}
+        </h3>
+        <button
+          type="button"
+          class="admin__editor-back"
+          (click)="onFormCancelled()"
+          aria-label="Back to list"
+          title="Back to list"
+        >
+          ← Back
+        </button>
+      </header>
+
+      <woe-tome-form
+        [initial]="editor().initial"
+        [sessionKey]="editor().sessionKey + ''"
+        [zoneId]="selectedZoneId()"
+        [x]="editor().x"
+        [y]="editor().y"
+        [zones]="tomes.zones()"
+        [allLocations]="tomes.locations()"
+        (saved)="onFormSaved($event)"
+        (cancelled)="onFormCancelled()"
+        (coordsChanged)="onFormCoordsChanged($event)"
+      />
+    } @else {
+      <h3 class="admin__sidebar-title">
+        Locations on {{ currentZone().name }}
+        <span class="admin__count">{{ visibleLocations().length }}</span>
+      </h3>
+
+      @if (visibleLocations().length === 0) {
+        <p class="admin__empty">
+          No locations on this map yet. Click anywhere on the map to add one.
+        </p>
+      } @else {
+        <ul class="admin__list">
+          @for (loc of visibleLocations(); track loc.id) {
+            <li
+              class="admin__list-item"
+              [class.is-selected]="loc.id === selectedLocationId()"
+            >
+              <div class="admin__list-text">
+                <span
+                  class="admin__list-name"
+                  [class.rarity-epic]="loc.rarity === 'epic'"
+                  [class.rarity-rare]="loc.rarity === 'rare'"
+                >
+                  {{ loc.tomeName }}
+                </span>
+                <span class="admin__list-place">{{ loc.placeName }}</span>
+                <span class="admin__list-coords">({{ loc.x }}%, {{ loc.y }}%)</span>
+              </div>
+              <div class="admin__list-actions">
+                <button type="button" (click)="editLocation(loc)">Edit</button>
+                <button
+                  type="button"
+                  class="admin__danger"
+                  (click)="deleteLocation(loc)"
+                >
+                  Delete
+                </button>
+              </div>
+            </li>
+          }
+        </ul>
+      }
+    }
+  </aside>
+</div>

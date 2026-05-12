@@ -1,0 +1,21 @@
+.zone-switcher {
+  display: flex;
+  gap: 6px;
+  padding: 10px;
+  background: var(--woe-bg-2);
+  border-bottom: 1px solid var(--woe-border);
+  flex-shrink: 0;
+
+  button {
+    background: var(--woe-panel);
+    border-color: var(--woe-border);
+    color: var(--woe-text-dim);
+    padding: 6px 14px;
+
+    &.is-active {
+      color: var(--woe-accent);
+      border-color: var(--woe-accent);
+      background: var(--woe-panel-2);
+    }
+  }
+}

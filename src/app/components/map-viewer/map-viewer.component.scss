@@ -1,0 +1,98 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.map-host {
+  width: 100%;
+  height: 100%;
+  background: #000;
+
+  &.is-placement {
+    cursor: crosshair;
+  }
+}
+
+.map-loading,
+.map-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.65);
+  color: var(--woe-text);
+  padding: 10px 18px;
+  border-radius: var(--woe-radius);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+  z-index: 600;
+  backdrop-filter: blur(4px);
+}
+
+.map-error {
+  background: rgba(120, 30, 30, 0.85);
+  color: #fff;
+}
+
+.map-loading__spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-top-color: var(--woe-accent);
+  border-radius: 50%;
+  animation: woe-spin 0.9s linear infinite;
+}
+
+@keyframes woe-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Selected marker: pulsing gold ring. */
+::ng-deep .woe-marker-wrapper.is-selected .woe-marker {
+  box-shadow: 0 0 0 2px var(--woe-accent),
+              0 0 12px var(--woe-accent),
+              0 0 4px rgba(0, 0, 0, 0.8);
+  transform: scale(1.25);
+}
+
+/* Editing marker (draggable in admin): gold dashed ring + move cursor. */
+::ng-deep .woe-marker-wrapper .woe-marker.is-editing {
+  box-shadow: 0 0 0 2px #1a1a1a,
+              0 0 0 4px var(--woe-accent),
+              0 0 12px rgba(255, 206, 90, 0.5);
+  cursor: move;
+}
+
+/* Draft marker (new pin being authored): same emphasis but with a
+   subtle pulse to make it obvious which pin will be saved. */
+::ng-deep .woe-marker-wrapper .woe-marker.is-draft {
+  animation: woe-pin-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes woe-pin-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 2px #1a1a1a,
+                0 0 0 4px var(--woe-accent),
+                0 0 8px rgba(255, 206, 90, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 2px #1a1a1a,
+                0 0 0 4px var(--woe-accent),
+                0 0 18px rgba(255, 206, 90, 0.85);
+  }
+}
+
+/* Leaflet's drag class — bump cursor while dragging. */
+::ng-deep .leaflet-marker-draggable {
+  cursor: grab;
+}
+::ng-deep .leaflet-dragging .leaflet-marker-draggable {
+  cursor: grabbing;
+}

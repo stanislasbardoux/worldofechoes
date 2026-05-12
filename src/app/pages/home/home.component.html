@@ -1,0 +1,28 @@
+<woe-zone-switcher
+  [zones]="tomes.zones()"
+  [currentZoneId]="selectedZoneId()"
+  (zoneSelected)="onZoneChanged($event)"
+/>
+
+<div class="home__body">
+  <div class="home__map-wrapper">
+    @if (currentZone()) {
+      <woe-map-viewer
+        [zone]="currentZone()!"
+        [locations]="visibleLocations()"
+        [selectedLocationId]="selectedLocationId()"
+        (markerClicked)="onMarkerClicked($event)"
+      />
+    }
+  </div>
+
+  @if (selectedLocation()) {
+    <woe-tome-panel
+      [location]="selectedLocation()"
+      [siblings]="siblings()"
+      [zoneNames]="zoneNameLookup()"
+      (closed)="onPanelClosed()"
+      (jumpTo)="onJumpTo($event)"
+    />
+  }
+</div>

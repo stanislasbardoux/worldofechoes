@@ -1,0 +1,119 @@
+/* Custom Angular elements default to display:inline; without this the
+   inner `.search-box { width: 100% }` resolves against the inline
+   element's content width and the search bar stays narrow. */
+:host {
+  display: block;
+  width: 100%;
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+  /* ~3.3\u00d7 the original 420px ceiling, with a generous cap so the
+     input is comfortably wide on any reasonable display. */
+  max-width: 1400px;
+  margin: 0 auto;
+
+  &__icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--woe-text-dim);
+    font-size: 16px;
+    pointer-events: none;
+  }
+
+  input {
+    background: var(--woe-bg-2);
+    border: 1px solid var(--woe-border);
+    border-radius: 999px;
+    padding: 6px 14px 6px 32px;
+    color: var(--woe-text);
+    width: 100%;
+    height: 32px;
+
+    &::placeholder {
+      color: var(--woe-text-dim);
+    }
+
+    &:focus {
+      border-color: var(--woe-accent);
+    }
+
+    /* Hide the native "x" clear button in some browsers — looks bad
+       on dark themes. */
+    &::-webkit-search-cancel-button {
+      filter: invert(0.7);
+    }
+  }
+
+  &.is-open input {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  &__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 4px);
+    margin: 0;
+    padding: 4px;
+    list-style: none;
+    background: var(--woe-panel);
+    border: 1px solid var(--woe-border);
+    border-radius: var(--woe-radius);
+    box-shadow: var(--woe-shadow);
+    max-height: 360px;
+    overflow-y: auto;
+    z-index: 800;
+  }
+
+  &__item {
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    &.is-active,
+    &:hover {
+      background: var(--woe-panel-2);
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__meta {
+    font-size: 12px;
+    color: var(--woe-text-dim);
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  &__count {
+    color: var(--woe-text);
+  }
+
+  &__empty {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 4px);
+    background: var(--woe-panel);
+    border: 1px solid var(--woe-border);
+    border-radius: var(--woe-radius);
+    padding: 10px 12px;
+    color: var(--woe-text-dim);
+    font-size: 13px;
+    font-style: italic;
+    box-shadow: var(--woe-shadow);
+    z-index: 800;
+  }
+}

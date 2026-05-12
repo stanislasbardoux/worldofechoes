@@ -1,0 +1,20 @@
+<div
+  #mapHost
+  class="map-host"
+  [class.is-placement]="placementMode"
+  role="region"
+  aria-label="Interactive map"
+></div>
+
+@if (loading) {
+  <div class="map-loading" role="status" aria-live="polite">
+    <span class="map-loading__spinner" aria-hidden="true"></span>
+    <span>Loading map…</span>
+  </div>
+}
+
+@if (loadError) {
+  <div class="map-error" role="alert">
+    Failed to load the map image.
+  </div>
+}

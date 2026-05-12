@@ -1,0 +1,90 @@
+@if (location; as loc) {
+  <aside class="tome-panel" aria-live="polite">
+    <header class="tome-panel__header">
+      <h2
+        class="tome-panel__title"
+        [class.rarity-epic]="loc.rarity === 'epic'"
+        [class.rarity-rare]="loc.rarity === 'rare'"
+      >
+        {{ loc.tomeName }}
+      </h2>
+      <button
+        class="tome-panel__close"
+        type="button"
+        (click)="closed.emit()"
+        aria-label="Close panel"
+      >
+        ×
+      </button>
+    </header>
+
+    <p class="tome-panel__place">{{ loc.placeName }}</p>
+
+    @if (loc.notes) {
+      <p class="tome-panel__notes">{{ loc.notes }}</p>
+    }
+
+    <section class="tome-panel__section">
+      <h3>Mobs</h3>
+      @if (loc.mobs.length) {
+        <ul class="tome-panel__list">
+          @for (mob of loc.mobs; track mob) {
+            <li>{{ mob }}</li>
+          }
+        </ul>
+      } @else {
+        <p class="tome-panel__empty">No mobs listed.</p>
+      }
+    </section>
+
+    <section class="tome-panel__section">
+      <h3>Recommended Specs</h3>
+      @if (loc.specs.length) {
+        <div class="tome-panel__chips">
+          @for (spec of loc.specs; track spec) {
+            <span class="tome-panel__chip">{{ specLabel(spec) }}</span>
+          }
+        </div>
+      } @else {
+        <p class="tome-panel__empty">No spec preference.</p>
+      }
+    </section>
+
+    <section class="tome-panel__section">
+      <h3>Other farm locations</h3>
+      @if (siblings.length) {
+        <ul class="tome-panel__list">
+          @for (sib of siblings; track sib.id) {
+            <li>
+              <a
+                href="#"
+                class="tome-panel__hotlink"
+                (click)="$event.preventDefault(); jumpTo.emit({ locationId: sib.id })"
+              >
+                ({{ sib.x }}%, {{ sib.y }}%)
+              </a>
+              <span class="tome-panel__sibling-name">
+                ({{ sib.placeName }}<span class="tome-panel__zone-tag">— {{ zoneNames[sib.zone] }}</span>)
+              </span>
+            </li>
+          }
+        </ul>
+      } @else {
+        <p class="tome-panel__empty">This is the only known farm spot.</p>
+      }
+    </section>
+
+    @if (editable) {
+      <div class="tome-panel__actions">
+        <button type="button" (click)="editClicked.emit(loc)">Edit</button>
+        <button
+          type="button"
+          class="tome-panel__danger"
+          (click)="deleteClicked.emit(loc)"
+        >
+          Delete
+        </button>
+      </div>
+    }
+  </aside>
+}

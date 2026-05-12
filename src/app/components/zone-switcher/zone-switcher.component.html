@@ -1,0 +1,13 @@
+<div class="zone-switcher" role="tablist" aria-label="Zone">
+  @for (zone of zones; track zone.id) {
+    <button
+      type="button"
+      role="tab"
+      [attr.aria-selected]="zone.id === currentZoneId"
+      [class.is-active]="zone.id === currentZoneId"
+      (click)="zoneSelected.emit(zone.id)"
+    >
+      {{ zone.name }}
+    </button>
+  }
+</div>

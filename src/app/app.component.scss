@@ -1,0 +1,77 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.app-header {
+  display: grid;
+  /* Brand and nav take only the space they need; the search bar gets
+     all the rest, so it stretches generously on wide screens. */
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 20px;
+  background: var(--woe-panel);
+  border-bottom: 1px solid var(--woe-border);
+  flex-shrink: 0;
+
+  &__brand {
+    color: var(--woe-accent);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-self: start;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__brand-mark {
+    font-size: 20px;
+    color: var(--woe-accent);
+  }
+
+  &__search {
+    justify-self: stretch;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 14px;
+    justify-self: end;
+
+    a {
+      color: var(--woe-text-dim);
+      font-size: 14px;
+      padding: 4px 10px;
+      border-radius: var(--woe-radius);
+      transition: color 0.12s ease, background 0.12s ease;
+
+      &:hover {
+        color: var(--woe-text);
+        text-decoration: none;
+        background: var(--woe-panel-2);
+      }
+
+      &.is-active {
+        color: var(--woe-accent);
+        background: var(--woe-panel-2);
+      }
+    }
+  }
+}
+
+.app-main {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}

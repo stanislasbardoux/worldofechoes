@@ -1,0 +1,21 @@
+<header class="app-header">
+  <a routerLink="/" class="app-header__brand">
+    <span class="app-header__brand-mark">⚔</span>
+    World of Echoes
+  </a>
+
+  <div class="app-header__search">
+    <woe-search-box />
+  </div>
+
+  <nav class="app-header__nav">
+    <a routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Map</a>
+    @if (debug) {
+      <a routerLink="/admin" routerLinkActive="is-active">Admin</a>
+    }
+  </nav>
+</header>
+
+<main class="app-main">
+  <router-outlet />
+</main>

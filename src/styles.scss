@@ -1,0 +1,135 @@
+/* ============================================================
+   World of Echoes — global styles
+   ============================================================ */
+
+:root {
+  /* WoW item-quality colors (canonical) — only the two we actually use. */
+  --woe-rare: #0070dd;     /* blue */
+  --woe-epic: #a335ee;     /* purple */
+
+  /* UI palette */
+  --woe-bg: #0e0f12;
+  --woe-bg-2: #14161b;
+  --woe-panel: #1a1d23;
+  --woe-panel-2: #22262e;
+  --woe-border: #2c313a;
+  --woe-text: #e6e6e6;
+  --woe-text-dim: #9aa0aa;
+  --woe-accent: #ffce5a;   /* WoW-ish gold */
+  --woe-danger: #c0392b;
+
+  /* Sizes */
+  --woe-radius: 8px;
+  --woe-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--woe-bg);
+  color: var(--woe-text);
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--woe-accent);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  border: 1px solid var(--woe-border);
+  background: var(--woe-panel-2);
+  color: var(--woe-text);
+  padding: 6px 12px;
+  border-radius: var(--woe-radius);
+  transition: background 0.12s ease, border-color 0.12s ease;
+
+  &:hover {
+    background: var(--woe-border);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--woe-text);
+  background: var(--woe-bg-2);
+  border: 1px solid var(--woe-border);
+  border-radius: var(--woe-radius);
+  padding: 6px 8px;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+    border-color: var(--woe-accent);
+  }
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  color: var(--woe-text-dim);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Leaflet dark tweaks — keep the map background matching our UI. */
+.leaflet-container {
+  background: #000;
+  font-family: inherit;
+}
+
+.leaflet-control-zoom a,
+.leaflet-control-attribution {
+  background: var(--woe-panel) !important;
+  color: var(--woe-text) !important;
+  border-color: var(--woe-border) !important;
+}
+
+/* Custom marker class — colored ring. Real styles are inline so we
+   can compose the rarity color, but a few shared bits live here. */
+.woe-marker {
+  border-radius: 50%;
+  border: 2px solid #000;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15),
+              0 0 8px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+
+.woe-marker:hover {
+  transform: scale(1.2);
+}
+
+.rarity-epic {
+  color: var(--woe-epic);
+}
+
+.rarity-rare {
+  color: var(--woe-rare);
+}
