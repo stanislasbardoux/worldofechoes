@@ -254,7 +254,7 @@
     {
       "id": "import-91adf275-5670-5570-50701b4b",
       "tomeId": "tome-call-of-the-lich-king",
-      "tomeName": "Call of The Lich King",
+      "tomeName": "Call Of The Lich King",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.3,
@@ -269,7 +269,7 @@
     {
       "id": "import-0661349e-a43c-a53c-9e3c9fc8",
       "tomeId": "tome-chill-of-the-bone-wyrm",
-      "tomeName": "Chill of The Bone Wyrm",
+      "tomeName": "Chill Of The Bone Wyrm",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.2,
@@ -329,7 +329,7 @@
     {
       "id": "import-25326870-e1f3-e2f3-dff3b87e",
       "tomeId": "tome-edict-of-the-four",
-      "tomeName": "Edict of The Four",
+      "tomeName": "Edict Of The Four",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.2,
@@ -344,7 +344,7 @@
     {
       "id": "import-f4e0ff0b-dc47-db47-e247f235",
       "tomeId": "tome-edict-of-the-iron-council",
-      "tomeName": "Edict of The Iron Council",
+      "tomeName": "Edict Of The Iron Council",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.6,
@@ -449,7 +449,7 @@
     {
       "id": "import-6b39acd7-0cea-0bea-0aeaf219",
       "tomeId": "tome-idol-of-yogg-saron",
-      "tomeName": "Idol of Yogg-Saron",
+      "tomeName": "Idol Of Yogg-Saron",
       "rarity": "epic",
       "zone": "northrend",
       "x": 58.3,
@@ -918,6 +918,104 @@
         "melee-dps"
       ],
       "notes": "Be careful, they can stunlock-bump you if you can't kill them fast enough"
+    },
+    {
+      "id": "6e79d373-eebe-446b-918d-376c886d9cf8",
+      "tomeId": "tome-heavy-incantations",
+      "tomeName": "Heavy Incantations",
+      "rarity": "epic",
+      "zone": "kalimdor",
+      "x": 85.5,
+      "y": 5.4,
+      "placeName": "Pretty much everywhere",
+      "mobs": [],
+      "specs": [],
+      "notes": "This tomes is extremely common. Usually very cheap on the AH"
+    },
+    {
+      "id": "8dec4fe3-2cb8-479e-a903-f28a9264cbad",
+      "tomeId": "tome-fel-surge",
+      "tomeName": "Fel Surge",
+      "rarity": "rare",
+      "zone": "kalimdor",
+      "x": 85.6,
+      "y": 6.1,
+      "placeName": "Everywhere",
+      "mobs": [],
+      "specs": [],
+      "notes": "This tomes is extremely common. Usually very cheap on the AH"
+    },
+    {
+      "id": "8c8ee6e1-0051-4d91-953a-0250ef3822ef",
+      "tomeId": "tome-hunting-hazard",
+      "tomeName": "Hunting Hazard",
+      "rarity": "rare",
+      "zone": "kalimdor",
+      "x": 83.1,
+      "y": 3.5,
+      "placeName": "Pretty much Everywhere",
+      "mobs": [],
+      "specs": [],
+      "notes": "This tomes is extremely common. Usually very cheap on the AH"
+    },
+    {
+      "id": "ceb38907-cbac-4b78-9fcb-f3480e87bea4",
+      "tomeId": "tome-fel-hazard",
+      "tomeName": "Fel Hazard",
+      "rarity": "rare",
+      "zone": "kalimdor",
+      "x": 83.1,
+      "y": 4.4,
+      "placeName": "Pretty much everywhere",
+      "mobs": [],
+      "specs": [],
+      "notes": "This tomes is extremely common. Usually very cheap on the AH"
+    },
+    {
+      "id": "b9fcd76c-bdc4-4099-9ef0-6468cc88574f",
+      "tomeId": "tome-battle-rhythm",
+      "tomeName": "Battle Rhythm",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 57.5,
+      "y": 53.5,
+      "placeName": "Outland - Shattered Halls",
+      "mobs": [],
+      "specs": [
+        "tank",
+        "caster-dps",
+        "melee-dps",
+        "ranged-dps"
+      ]
+    },
+    {
+      "id": "37e66aac-7409-42f6-8fe2-b056006a381e",
+      "tomeId": "tome-fortress-soul",
+      "tomeName": "Fortress Soul",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 57.5,
+      "y": 53.4,
+      "placeName": "Outland - Shattered Halls",
+      "mobs": [],
+      "specs": [
+        "tank"
+      ]
+    },
+    {
+      "id": "4803a498-3b9b-4667-9ad3-c120c5ddd40c",
+      "tomeId": "tome-relentless-energy",
+      "tomeName": "Relentless Energy",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 57.6,
+      "y": 53.4,
+      "placeName": "Outland - Shattered Halls",
+      "mobs": [],
+      "specs": [
+        "melee-dps"
+      ],
+      "notes": "rogues/cat druids"
     }
   ]
 }
