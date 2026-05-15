@@ -1043,6 +1043,52 @@
         "Crazed Water Spirit"
       ],
       "specs": []
+    },
+    {
+      "id": "3a10f6f7-1352-4582-b5a4-1070f683f653",
+      "tomeId": "tome-storm-hazard",
+      "tomeName": "Storm Hazard",
+      "rarity": "rare",
+      "zone": "eastern-kingdoms",
+      "x": 41.3,
+      "y": 85.8,
+      "placeName": "Stranglethorn Vale - Mosh'ogg ogred mound",
+      "mobs": [
+        "Mosh'Ogg Shaman"
+      ],
+      "specs": []
+    },
+    {
+      "id": "9ee3aa5e-60bc-4e10-a253-d9a28c683e45",
+      "tomeId": "tome-storm-surge",
+      "tomeName": "Storm Surge",
+      "rarity": "rare",
+      "zone": "eastern-kingdoms",
+      "x": 41.3,
+      "y": 85.9,
+      "placeName": "Stranglethorn Vale - Mosh'ogg ogred mound",
+      "mobs": [
+        "Mosh'Ogg Shaman"
+      ],
+      "specs": []
+    },
+    {
+      "id": "6b62c7e6-8f88-41e2-92fe-d0a3b5814da3",
+      "tomeId": "tome-entropic-fusion",
+      "tomeName": "Entropic Fusion",
+      "rarity": "rare",
+      "zone": "eastern-kingdoms",
+      "x": 64.9,
+      "y": 63.8,
+      "placeName": "Burning Steppes - Dreadmaul Rock",
+      "mobs": [
+        "Flamekin Spitter"
+      ],
+      "specs": [
+        "caster-dps",
+        "melee-dps",
+        "ranged-dps"
+      ]
     }
   ]
 }
