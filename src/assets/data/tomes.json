@@ -1089,6 +1089,22 @@
         "melee-dps",
         "ranged-dps"
       ]
+    },
+    {
+      "id": "92899fed-0f8a-4ba9-bd23-8f90c2511142",
+      "tomeId": "tome-arcchmage",
+      "tomeName": "Arcchmage's Mark",
+      "rarity": "rare",
+      "zone": "eastern-kingdoms",
+      "x": 86.4,
+      "y": 16.1,
+      "placeName": "Tyr''s Hand - Eastern Plaguelands",
+      "mobs": [
+        "Scarlet Archmage"
+      ],
+      "specs": [
+        "caster-dps"
+      ]
     }
   ]
 }
