@@ -1265,6 +1265,21 @@
       ],
       "specs": [],
       "notes": "to be confirmed"
+    },
+    {
+      "id": "7fefb43f-bbba-4af0-a165-67a84a7b0f52",
+      "tomeId": "tome-ambidexterity",
+      "tomeName": "Ambidexterity",
+      "rarity": "epic",
+      "zone": "eastern-kingdoms",
+      "x": 26.2,
+      "y": 94.1,
+      "placeName": "outside BB",
+      "mobs": [
+        "Bloodsail Raiders"
+      ],
+      "specs": [],
+      "notes": "to be confirmed"
     }
   ]
 }
