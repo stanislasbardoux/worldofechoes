@@ -1280,6 +1280,106 @@
       ],
       "specs": [],
       "notes": "to be confirmed"
+    },
+    {
+      "id": "3e57d1ef-faf3-4865-80bc-1fd6052a9c63",
+      "tomeId": "tome-quickened-tempo",
+      "tomeName": "Quickened Tempo",
+      "rarity": "epic",
+      "zone": "eastern-kingdoms",
+      "x": 22.6,
+      "y": 78.7,
+      "placeName": "Westfall",
+      "mobs": [
+        "Riverpaw Taskmaster"
+      ],
+      "specs": [],
+      "notes": "to be confirmed"
+    },
+    {
+      "id": "9bc1222a-6b32-4dc0-9a4d-54a18d83164c",
+      "tomeId": "tome-quickened-tempo",
+      "tomeName": "Quickened Tempo",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 50.6,
+      "y": 42.2,
+      "placeName": "Below Dalaran - Crystalsong Forest",
+      "mobs": [
+        "Sinewy Wolf"
+      ],
+      "specs": [],
+      "notes": "to be confirmed"
+    },
+    {
+      "id": "2215b1e2-f3ba-454f-9f21-df08a3d9c6b9",
+      "tomeId": "tome-elemental-slayer",
+      "tomeName": "Elemental Slayer",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 51,
+      "y": 42.3,
+      "placeName": "Crystalsong Forest - Forlorn Woods",
+      "mobs": [
+        "Grove Walker"
+      ],
+      "specs": []
+    },
+    {
+      "id": "e2f0d1a2-eab1-450c-b75c-845ae07910c3",
+      "tomeId": "tome-elemental-bane",
+      "tomeName": "Elemental Bane",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 51.3,
+      "y": 42.5,
+      "placeName": "Crystalsong Forest - Forlorn Woods",
+      "mobs": [
+        "Grove Walker"
+      ],
+      "specs": []
+    },
+    {
+      "id": "461cc2fa-b9f8-4434-81aa-eca32690ca80",
+      "tomeId": "tome-accelerated-decay",
+      "tomeName": "Accelerated Decay",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 50.9,
+      "y": 42.7,
+      "placeName": "Crystalsong Forest - Forlorn Woods",
+      "mobs": [
+        "Either Stags, Wolves or Grove Walkers"
+      ],
+      "specs": []
+    },
+    {
+      "id": "b4b33708-0b53-4b74-9233-7d575c7a1786",
+      "tomeId": "tome-beast-bane",
+      "tomeName": "Beast Bane",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 51.3,
+      "y": 42.9,
+      "placeName": "Crystalsong Forest - Forlorn Woods",
+      "mobs": [
+        "Sinewy Wolf"
+      ],
+      "specs": []
+    },
+    {
+      "id": "96437c0b-26d5-45e2-8029-edd9a9a3dd1f",
+      "tomeId": "tome-beast-slayer",
+      "tomeName": "Beast Slayer",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 51.5,
+      "y": 42.7,
+      "placeName": "Crystalsong Forest - Forlorn Woods",
+      "mobs": [
+        "Sinewy Wolf"
+      ],
+      "specs": []
     }
   ]
 }
