@@ -1293,23 +1293,7 @@
       "mobs": [
         "Riverpaw Taskmaster"
       ],
-      "specs": [],
-      "notes": "to be confirmed"
-    },
-    {
-      "id": "9bc1222a-6b32-4dc0-9a4d-54a18d83164c",
-      "tomeId": "tome-quickened-tempo",
-      "tomeName": "Quickened Tempo",
-      "rarity": "epic",
-      "zone": "northrend",
-      "x": 50.6,
-      "y": 42.2,
-      "placeName": "Below Dalaran - Crystalsong Forest",
-      "mobs": [
-        "Sinewy Wolf"
-      ],
-      "specs": [],
-      "notes": "to be confirmed"
+      "specs": []
     },
     {
       "id": "2215b1e2-f3ba-454f-9f21-df08a3d9c6b9",
@@ -1378,6 +1362,20 @@
       "placeName": "Crystalsong Forest - Forlorn Woods",
       "mobs": [
         "Sinewy Wolf"
+      ],
+      "specs": []
+    },
+    {
+      "id": "4356ab9a-ef58-4b85-8ff3-540ba94cc6d3",
+      "tomeId": "tome-armor-mastery",
+      "tomeName": "Armor Mastery",
+      "rarity": "epic",
+      "zone": "eastern-kingdoms",
+      "x": 16.2,
+      "y": 25.7,
+      "placeName": "Pyrewood Village - Silverpine Forest",
+      "mobs": [
+        "Moonrage Armorer"
       ],
       "specs": []
     }
