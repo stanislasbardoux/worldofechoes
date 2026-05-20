@@ -1105,6 +1105,91 @@
       "specs": [
         "caster-dps"
       ]
+    },
+    {
+      "id": "3fe0539d-3ae3-4ac7-ab34-24f926807a0d",
+      "tomeId": "tome-contagion",
+      "tomeName": "Contagion",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 44.9,
+      "y": 37.6,
+      "placeName": "Malykriss - Icecrown",
+      "mobs": [
+        "Undead mobs on boost spots, idk which ones for now"
+      ],
+      "specs": []
+    },
+    {
+      "id": "d056d799-1a7a-4216-a153-7e1071c753ed",
+      "tomeId": "tome-pandemic",
+      "tomeName": "Pandemic",
+      "rarity": "epic",
+      "zone": "northrend",
+      "x": 45.2,
+      "y": 37.1,
+      "placeName": "Malykriss - Icecrown",
+      "mobs": [
+        "Undead mobs on boost spots, idk which ones for now"
+      ],
+      "specs": []
+    },
+    {
+      "id": "29a63c7d-61ef-4874-8bbd-95643733180b",
+      "tomeId": "tome-undead-slayer",
+      "tomeName": "Undead Slayer",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 45.3,
+      "y": 37.7,
+      "placeName": "Malykriss - Icecrown",
+      "mobs": [
+        "Undead mobs on boost spots, idk which ones for now"
+      ],
+      "specs": []
+    },
+    {
+      "id": "caae1612-d019-4216-a566-7fa0b5e40681",
+      "tomeId": "tome-undead-bane",
+      "tomeName": "Undead Bane",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 45.6,
+      "y": 37.3,
+      "placeName": "Malykriss - Icecrown",
+      "mobs": [
+        "Undead mobs on boost spots, idk which ones for now"
+      ],
+      "specs": []
+    },
+    {
+      "id": "59c1dfbf-137b-4db7-ba84-6073e2fa908f",
+      "tomeId": "tome-elemental-bane",
+      "tomeName": "Elemental Bane",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 39.7,
+      "y": 51.6,
+      "placeName": "Wintergrasp",
+      "mobs": [
+        "Wind Elementals (confirmed)"
+      ],
+      "specs": [],
+      "notes": "Poentitally on other elementals as well"
+    },
+    {
+      "id": "c9e00385-e457-4a29-8992-083228877940",
+      "tomeId": "tome-elemental-slayer",
+      "tomeName": "Elemental Slayer",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 39.3,
+      "y": 51.6,
+      "placeName": "Wintergrasp",
+      "mobs": [
+        "Elementals, To be tested for which ones specifically"
+      ],
+      "specs": []
     }
   ]
 }
