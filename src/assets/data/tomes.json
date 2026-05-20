@@ -1235,6 +1235,21 @@
       ],
       "specs": [],
       "notes": "to be confirmed"
+    },
+    {
+      "id": "5f331101-1c43-4ff5-b31f-795011123804",
+      "tomeId": "tome-pandemic",
+      "tomeName": "Pandemic",
+      "rarity": "epic",
+      "zone": "eastern-kingdoms",
+      "x": 50,
+      "y": 16.8,
+      "placeName": "Western Plaguelands",
+      "mobs": [
+        "Skeletons"
+      ],
+      "specs": [],
+      "notes": "Near cauldrons"
     }
   ]
 }
