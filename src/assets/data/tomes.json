@@ -1190,6 +1190,51 @@
         "Elementals, To be tested for which ones specifically"
       ],
       "specs": []
+    },
+    {
+      "id": "c2c79c9a-273c-4fa4-ada7-e3cc641c19ce",
+      "tomeId": "tome-insulated-soul",
+      "tomeName": "Insulated Soul",
+      "rarity": "rare",
+      "zone": "kalimdor",
+      "x": 62.5,
+      "y": 70.9,
+      "placeName": "Dustwallow Marsh - Outside Ony raid",
+      "mobs": [
+        "Dragonkins"
+      ],
+      "specs": [],
+      "notes": "to be confirmed"
+    },
+    {
+      "id": "412fa602-8c1e-4565-b2d0-644fbf8f4d77",
+      "tomeId": "tome-dragon-slayer",
+      "tomeName": "Dragon Slayer",
+      "rarity": "rare",
+      "zone": "kalimdor",
+      "x": 62.7,
+      "y": 70.9,
+      "placeName": "Dustwallow Marsh - Outside Ony raid",
+      "mobs": [
+        "Dragonkins"
+      ],
+      "specs": [],
+      "notes": "to be confirmed"
+    },
+    {
+      "id": "889823ca-bc16-4bac-b222-c308b78b5d68",
+      "tomeId": "tome-dragonkin-bane",
+      "tomeName": "Dragonkin Bane",
+      "rarity": "rare",
+      "zone": "kalimdor",
+      "x": 62.3,
+      "y": 70.9,
+      "placeName": "Dustwallow Marsh - Outside Ony raid",
+      "mobs": [
+        "Dragonkins"
+      ],
+      "specs": [],
+      "notes": "to be confirmed"
     }
   ]
 }
