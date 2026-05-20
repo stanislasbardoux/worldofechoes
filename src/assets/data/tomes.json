@@ -1250,6 +1250,21 @@
       ],
       "specs": [],
       "notes": "Near cauldrons"
+    },
+    {
+      "id": "e2f7e016-6d42-4a2f-8a7e-e674f3e86134",
+      "tomeId": "tome-quickened-tempo",
+      "tomeName": "Quickened Tempo",
+      "rarity": "epic",
+      "zone": "outland",
+      "x": 53,
+      "y": 78.8,
+      "placeName": "Terrokar Forest - Bonechewer Ruins",
+      "mobs": [
+        "Red Orcs"
+      ],
+      "specs": [],
+      "notes": "to be confirmed"
     }
   ]
 }
