@@ -1408,6 +1408,23 @@
         "Rotting Sludge"
       ],
       "specs": []
+    },
+    {
+      "id": "82bb76eb-2600-4735-8f80-dc8d2039d847",
+      "tomeId": "tome-titan-s-grip",
+      "tomeName": "Titan's Grip",
+      "rarity": "epic",
+      "zone": "eastern-kingdoms",
+      "x": 39.8,
+      "y": 10,
+      "placeName": "Scarlet Monastery - Scarlet Armory",
+      "mobs": [
+        "Herod"
+      ],
+      "specs": [
+        "caster-dps",
+        "melee-dps"
+      ]
     }
   ]
 }
