@@ -1499,6 +1499,106 @@
       "specs": [
         "tank"
       ]
+    },
+    {
+      "id": "8e77f27b-6648-43d5-bc96-71f06eae5127",
+      "tomeId": "tome-",
+      "tomeName": "Frost Bite",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 45.6,
+      "y": 34.9,
+      "placeName": "Icecrown",
+      "mobs": [
+        "Skeletal Archmage"
+      ],
+      "specs": [
+        "tank"
+      ]
+    },
+    {
+      "id": "8d7c045b-13fa-44fe-b8bb-e7dd9e5d5892",
+      "tomeId": "tome-dragon-slayer",
+      "tomeName": "Dragon Slayer",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 47.9,
+      "y": 46.1,
+      "placeName": "Crystalsong Forest",
+      "mobs": [
+        "Azure Spellweaver"
+      ],
+      "specs": []
+    },
+    {
+      "id": "42f8ed19-5751-4c45-8f7c-ea226d63e114",
+      "tomeId": "tome-dragonkin-bane",
+      "tomeName": "Dragonkin Bane",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 48.2,
+      "y": 45.9,
+      "placeName": "Crystalsong Forest",
+      "mobs": [
+        "Azure Spellweaver"
+      ],
+      "specs": []
+    },
+    {
+      "id": "dd9005e5-8661-4cab-85d0-f857f7ab37d1",
+      "tomeId": "tome-",
+      "tomeName": "Stoneskin Threads",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 48.6,
+      "y": 45.2,
+      "placeName": "Crystalsong Forest",
+      "mobs": [
+        "Azure Manashaper"
+      ],
+      "specs": []
+    },
+    {
+      "id": "2ffd16cb-6216-4c53-a720-ee9c756fae3c",
+      "tomeId": "tome-arcane-surge",
+      "tomeName": "Arcane Surge",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 48.3,
+      "y": 45,
+      "placeName": "Crystalsong Forest",
+      "mobs": [
+        "Azure Manashaper"
+      ],
+      "specs": []
+    },
+    {
+      "id": "a5226b38-5777-48a6-b8d8-c91960bd2fe7",
+      "tomeId": "tome-steady-casting",
+      "tomeName": "Steady Casting",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 48.5,
+      "y": 44.8,
+      "placeName": "Crystalsong Forest",
+      "mobs": [
+        "Azure Manashaper"
+      ],
+      "specs": []
+    },
+    {
+      "id": "77b27546-56d4-41a9-bb6f-6cd082357c9e",
+      "tomeId": "tome-",
+      "tomeName": "Veerdant Ward",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 38,
+      "y": 52.9,
+      "placeName": "Wintergrasp",
+      "mobs": [
+        "Whispering Wind"
+      ],
+      "specs": []
     }
   ]
 }
