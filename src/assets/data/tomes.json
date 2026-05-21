@@ -1425,6 +1425,48 @@
         "caster-dps",
         "melee-dps"
       ]
+    },
+    {
+      "id": "bac74da7-c62a-4b7e-b7de-7195c077a035",
+      "tomeId": "tome-essence-tap",
+      "tomeName": "Essence Tap",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 57.7,
+      "y": 52.8,
+      "placeName": "Hellfire Citadel",
+      "mobs": [
+        "Orcs outside the citadel, probably casters/warlock"
+      ],
+      "specs": []
+    },
+    {
+      "id": "f5de94ee-b374-4914-9425-5d3a8fecea68",
+      "tomeId": "tome-echoing-tides",
+      "tomeName": "Echoing Tides",
+      "rarity": "rare",
+      "zone": "outland",
+      "x": 57.6,
+      "y": 52.8,
+      "placeName": "Hellfire Citadel",
+      "mobs": [
+        "Orcs outside the citadel, probably casters/warlock"
+      ],
+      "specs": []
+    },
+    {
+      "id": "ff625d56-7697-4f3b-b815-342ab19fdeda",
+      "tomeId": "tome-quickened-tempo",
+      "tomeName": "Quickened Tempo",
+      "rarity": "epic",
+      "zone": "outland",
+      "x": 57.8,
+      "y": 52.8,
+      "placeName": "Hellfire Citadel",
+      "mobs": [
+        "Orcs outside the citadel, probably casters/warlock"
+      ],
+      "specs": []
     }
   ]
 }
