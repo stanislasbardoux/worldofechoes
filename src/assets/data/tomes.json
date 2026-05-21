@@ -1467,6 +1467,38 @@
         "Orcs outside the citadel, probably casters/warlock"
       ],
       "specs": []
+    },
+    {
+      "id": "6618534b-7205-40e9-af08-4b37cce5e471",
+      "tomeId": "tome-ember-ward",
+      "tomeName": "Ember Ward",
+      "rarity": "rare",
+      "zone": "northrend",
+      "x": 40.6,
+      "y": 52.4,
+      "placeName": "Wintergrasp - Fire zone",
+      "mobs": [
+        "Flame Revenant"
+      ],
+      "specs": [
+        "tank"
+      ]
+    },
+    {
+      "id": "bf2c1ba9-ee6f-461c-adeb-8ff26a35b3f0",
+      "tomeId": "tome-sanguine-bulwark",
+      "tomeName": "Sanguine Bulwark",
+      "rarity": "epic",
+      "zone": "outland",
+      "x": 74.3,
+      "y": 81,
+      "placeName": "Black Temple",
+      "mobs": [
+        "Gurtogg Bloodboil"
+      ],
+      "specs": [
+        "tank"
+      ]
     }
   ]
 }
