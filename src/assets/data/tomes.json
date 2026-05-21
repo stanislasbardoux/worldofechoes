@@ -1378,6 +1378,21 @@
         "Moonrage Armorer"
       ],
       "specs": []
+    },
+    {
+      "id": "3709e8fc-ee72-4109-987d-0b3c98ff76d6",
+      "tomeId": "tome-pandemic",
+      "tomeName": "Pandemic",
+      "rarity": "epic",
+      "zone": "eastern-kingdoms",
+      "x": 82.4,
+      "y": 13.4,
+      "placeName": "Pestilent Scar - Eastern Plaguelands",
+      "mobs": [
+        "Living Decay",
+        "Rotting Sludge"
+      ],
+      "specs": []
     }
   ]
 }
