@@ -48,15 +48,19 @@ export interface ZoneConfig {
   imageUrl: string;
 }
 
+/** Canonical tome metadata (name, quality, description). */
+export interface Tome {
+  id: string;
+  name: string;
+  quality: TomeRarity;
+  description: string;
+}
+
 export interface FarmLocation {
   /** Unique id (uuid v4). */
   id: string;
   /** Logical tome this location belongs to. */
   tomeId: string;
-  /** Display name of the tome (same for every location of the same tome). */
-  tomeName: string;
-  /** Color/quality (purple = epic, blue = rare). */
-  rarity: TomeRarity;
   /** Which map this point lives on. */
   zone: ZoneId;
   /** X position as a percentage (0–100) of the map image width. */
@@ -75,6 +79,7 @@ export interface FarmLocation {
 
 export interface TomeDataFile {
   zones: ZoneConfig[];
+  tomes: Tome[];
   locations: FarmLocation[];
 }
 

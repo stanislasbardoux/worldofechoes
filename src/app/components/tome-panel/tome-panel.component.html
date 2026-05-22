@@ -3,10 +3,10 @@
     <header class="tome-panel__header">
       <h2
         class="tome-panel__title"
-        [class.rarity-epic]="loc.rarity === 'epic'"
-        [class.rarity-rare]="loc.rarity === 'rare'"
+        [class.rarity-epic]="tome?.quality === 'epic'"
+        [class.rarity-rare]="tome?.quality === 'rare'"
       >
-        {{ loc.tomeName }}
+        {{ tome?.name ?? 'Unknown tome' }}
       </h2>
       <button
         class="tome-panel__close"
@@ -71,6 +71,15 @@
         </ul>
       } @else {
         <p class="tome-panel__empty">This is the only known farm spot.</p>
+      }
+    </section>
+
+    <section class="tome-panel__section">
+      <h3>Description</h3>
+      @if (tome?.description) {
+        <p class="tome-panel__description">{{ tome!.description }}</p>
+      } @else {
+        <p class="tome-panel__empty">No description available.</p>
       }
     </section>
 

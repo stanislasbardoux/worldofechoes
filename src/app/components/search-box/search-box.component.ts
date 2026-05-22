@@ -19,7 +19,7 @@ import { FarmLocation, TomeRarity, ZoneId } from '../../models/tome.model';
 interface SearchResult {
   tomeId: string;
   tomeName: string;
-  rarity: TomeRarity;
+  quality: TomeRarity;
   /** All locations for this tome. */
   locations: FarmLocation[];
   /** The pin we'll jump to when this result is picked (first location). */
@@ -44,18 +44,19 @@ export class SearchBoxComponent {
   protected readonly open = signal(false);
   protected readonly activeIndex = signal(0);
 
-  /** All tomes (deduped by tomeId), sorted alphabetically. */
+  /** All tomes that have at least one pin, sorted alphabetically. */
   private readonly allTomes = computed<SearchResult[]>(() => {
     const byTome = new Map<string, SearchResult>();
     for (const loc of this.tomes.locations()) {
+      const meta = this.tomes.getTome(loc.tomeId);
       const existing = byTome.get(loc.tomeId);
       if (existing) {
         existing.locations.push(loc);
       } else {
         byTome.set(loc.tomeId, {
           tomeId: loc.tomeId,
-          tomeName: loc.tomeName,
-          rarity: loc.rarity,
+          tomeName: meta?.name ?? 'Unknown tome',
+          quality: meta?.quality ?? 'rare',
           locations: [loc],
           firstLocation: loc,
         });

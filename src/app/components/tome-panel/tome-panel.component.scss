@@ -54,6 +54,14 @@
     font-size: 13px;
   }
 
+  &__description {
+    margin: 0;
+    color: var(--woe-text);
+    font-size: 13px;
+    line-height: 1.45;
+    white-space: pre-wrap;
+  }
+
   &__section {
     h3 {
       margin: 0 0 6px 0;

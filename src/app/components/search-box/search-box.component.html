@@ -33,8 +33,8 @@
         >
           <span
             class="search-box__name"
-            [class.rarity-epic]="result.rarity === 'epic'"
-            [class.rarity-rare]="result.rarity === 'rare'"
+            [class.rarity-epic]="result.quality === 'epic'"
+            [class.rarity-rare]="result.quality === 'rare'"
           >
             {{ result.tomeName }}
           </span>

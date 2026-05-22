@@ -4,21 +4,57 @@
   </h2>
 
   <div class="tome-form__grid">
-    <div>
+    <div class="tome-form__full">
       <label for="tome-name">Tome name</label>
-      <input
-        id="tome-name"
-        name="tomeName"
-        type="text"
-        [(ngModel)]="tomeName"
-        (blur)="onTomeNameBlur()"
-        required
-      />
+      <div class="tome-form__combobox">
+        <input
+          #tomeInput
+          id="tome-name"
+          name="tomeName"
+          type="text"
+          [(ngModel)]="tomeName"
+          (ngModelChange)="onTomeNameInput()"
+          (focus)="tomeDropdownOpen = true"
+          autocomplete="off"
+          required
+        />
+        <button
+          type="button"
+          class="tome-form__combobox-toggle"
+          (click)="toggleTomeDropdown()"
+          aria-label="Show all tomes"
+          title="Show all tomes"
+        >
+          ▾
+        </button>
+        @if (tomeDropdownOpen && filteredTomes().length) {
+          <ul class="tome-form__combobox-list" role="listbox">
+            @for (t of filteredTomes(); track t.id) {
+              <li
+                role="option"
+                (mousedown)="$event.preventDefault(); selectTome(t)"
+              >
+                <span
+                  [class.rarity-epic]="t.quality === 'epic'"
+                  [class.rarity-rare]="t.quality === 'rare'"
+                >
+                  {{ t.name }}
+                </span>
+              </li>
+            }
+          </ul>
+        }
+      </div>
     </div>
 
     <div>
-      <label for="rarity">Rarity</label>
-      <select id="rarity" name="rarity" [(ngModel)]="rarity">
+      <label for="quality">Quality</label>
+      <select
+        id="quality"
+        name="quality"
+        [(ngModel)]="quality"
+        (ngModelChange)="onQualityChanged()"
+      >
         <option value="epic">Epic (purple)</option>
         <option value="rare">Rare (blue)</option>
       </select>
@@ -31,6 +67,16 @@
           <option [value]="z.id">{{ z.name }}</option>
         }
       </select>
+    </div>
+
+    <div class="tome-form__full">
+      <label for="description">Description</label>
+      <textarea
+        id="description"
+        name="description"
+        rows="4"
+        [(ngModel)]="description"
+      ></textarea>
     </div>
 
     <div class="tome-form__full">

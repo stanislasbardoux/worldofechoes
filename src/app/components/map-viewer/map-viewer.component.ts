@@ -21,6 +21,7 @@ import {
   ZoneConfig,
   clamp,
 } from '../../models/tome.model';
+import { TomeService } from '../../services/tome.service';
 
 /** A click event on the map, in percentage coordinates (0–100). */
 export interface MapClickEvent {
@@ -85,6 +86,7 @@ export class MapViewerComponent implements AfterViewInit, OnChanges, OnDestroy {
   @Output() pinDragged = new EventEmitter<MapClickEvent>();
 
   private readonly ngZone = inject(NgZone);
+  private readonly tomes = inject(TomeService);
 
   private map: L.Map | null = null;
   private imageOverlay: L.ImageOverlay | null = null;
@@ -265,11 +267,12 @@ export class MapViewerComponent implements AfterViewInit, OnChanges, OnDestroy {
     for (const loc of this.locations) {
       if (loc.zone !== this.zone.id) continue;
       const isEditing = loc.id === this.editingLocationId;
-      const icon = this.buildIcon(loc.rarity, isEditing);
+      const quality = this.tomes.getTomeQuality(loc.tomeId);
+      const icon = this.buildIcon(quality, isEditing);
       const marker = L.marker(this.percentToLatLng(loc.x, loc.y), {
         icon,
         riseOnHover: true,
-        title: loc.tomeName,
+        title: this.tomes.getTomeName(loc.tomeId),
         draggable: isEditing,
         autoPan: isEditing,
       });

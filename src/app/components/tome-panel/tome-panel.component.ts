@@ -1,10 +1,12 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
 import {
   FarmLocation,
   SPEC_LABELS,
   Spec,
+  Tome,
   ZoneId,
 } from '../../models/tome.model';
+import { TomeService } from '../../services/tome.service';
 
 export interface JumpToLocationEvent {
   locationId: string;
@@ -18,6 +20,8 @@ export interface JumpToLocationEvent {
   styleUrl: './tome-panel.component.scss',
 })
 export class TomePanelComponent {
+  private readonly tomes = inject(TomeService);
+
   @Input({ required: true }) location: FarmLocation | null = null;
   /** Other farm locations of the same tome (used for hotlinks). */
   @Input() siblings: FarmLocation[] = [];
@@ -37,6 +41,13 @@ export class TomePanelComponent {
   @Output() deleteClicked = new EventEmitter<FarmLocation>();
 
   readonly specLabels = SPEC_LABELS;
+
+  /** Resolved from the current pin's tomeId on each change detection cycle. */
+  protected get tome(): Tome | null {
+    const loc = this.location;
+    if (!loc) return null;
+    return this.tomes.getTome(loc.tomeId) ?? null;
+  }
 
   specLabel(spec: Spec): string {
     return SPEC_LABELS[spec];

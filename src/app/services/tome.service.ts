@@ -4,7 +4,9 @@ import { firstValueFrom } from 'rxjs';
 
 import {
   FarmLocation,
+  Tome,
   TomeDataFile,
+  TomeRarity,
   ZONE_LIST,
   ZoneConfig,
   ZoneId,
@@ -25,9 +27,10 @@ export class TomeService {
   // tomes.json schema or content changes meaningfully. Existing drafts
   // in older keys are simply abandoned by being unread; the browser
   // will garbage-collect them when storage pressure hits.
-  private static readonly LS_KEY = 'woe.locations.draft.v2';
+  private static readonly LS_KEY = 'woe.locations.draft.v3';
 
   private readonly _zones = signal<ZoneConfig[]>(ZONE_LIST);
+  private readonly _tomes = signal<Tome[]>([]);
   private readonly _locations = signal<FarmLocation[]>([]);
   private readonly _loaded = signal(false);
   /** Cross-component channel: the search box writes here, the home
@@ -35,9 +38,19 @@ export class TomeService {
   private readonly _focusRequest = signal<string | null>(null);
 
   readonly zones = this._zones.asReadonly();
+  readonly tomes = this._tomes.asReadonly();
   readonly locations = this._locations.asReadonly();
   readonly loaded = this._loaded.asReadonly();
   readonly focusRequest = this._focusRequest.asReadonly();
+
+  /** Tomes indexed by id — recomputed when tomes change. */
+  readonly tomesById = computed(() => {
+    const map = new Map<string, Tome>();
+    for (const tome of this._tomes()) {
+      map.set(tome.id, tome);
+    }
+    return map;
+  });
 
   /** Locations indexed by zone — recomputed when locations change. */
   readonly locationsByZone = computed(() => {
@@ -69,6 +82,7 @@ export class TomeService {
       // comes from the built-in ZONE_LIST; we only keep authored pins
       // from the draft.
       this._zones.set(ZONE_LIST);
+      this._tomes.set(draft.tomes ?? []);
       this._locations.set(draft.locations ?? []);
       this.persistDraft();
       this._loaded.set(true);
@@ -80,10 +94,12 @@ export class TomeService {
         this.http.get<TomeDataFile>(TomeService.DATA_URL),
       );
       this._zones.set(data.zones?.length ? data.zones : ZONE_LIST);
+      this._tomes.set(data.tomes ?? []);
       this._locations.set(data.locations ?? []);
     } catch (err) {
       console.warn('Failed to load tomes.json, starting empty.', err);
       this._zones.set(ZONE_LIST);
+      this._tomes.set([]);
       this._locations.set([]);
     } finally {
       this._loaded.set(true);
@@ -92,6 +108,18 @@ export class TomeService {
 
   getZone(id: ZoneId): ZoneConfig | undefined {
     return this._zones().find((z) => z.id === id);
+  }
+
+  getTome(tomeId: string): Tome | undefined {
+    return this.tomesById().get(tomeId);
+  }
+
+  getTomeQuality(tomeId: string): TomeRarity {
+    return this.getTome(tomeId)?.quality ?? 'rare';
+  }
+
+  getTomeName(tomeId: string): string {
+    return this.getTome(tomeId)?.name ?? 'Unknown tome';
   }
 
   getLocation(id: string): FarmLocation | undefined {
@@ -138,6 +166,19 @@ export class TomeService {
     this.persistDraft();
   }
 
+  upsertTome(tome: Tome): void {
+    const list = [...this._tomes()];
+    const idx = list.findIndex((t) => t.id === tome.id);
+    if (idx >= 0) {
+      list[idx] = tome;
+    } else {
+      list.push(tome);
+    }
+    list.sort((a, b) => a.name.localeCompare(b.name));
+    this._tomes.set(list);
+    this.persistDraft();
+  }
+
   remove(id: string): void {
     this._locations.set(this._locations().filter((l) => l.id !== id));
     this.persistDraft();
@@ -158,6 +199,7 @@ export class TomeService {
   exportJson(): string {
     const payload: TomeDataFile = {
       zones: this._zones(),
+      tomes: this._tomes(),
       locations: this._locations(),
     };
     return JSON.stringify(payload, null, 2);
@@ -184,6 +226,7 @@ export class TomeService {
     try {
       const payload: TomeDataFile = {
         zones: this._zones(),
+        tomes: this._tomes(),
         locations: this._locations(),
       };
       localStorage.setItem(TomeService.LS_KEY, JSON.stringify(payload));
@@ -210,5 +253,16 @@ export class TomeService {
       return crypto.randomUUID();
     }
     return 'id-' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+  }
+
+  /** Slugify a tome display name into a stable tome id. */
+  static slugTomeId(name: string): string {
+    return (
+      'tome-' +
+      name
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/(^-|-$)/g, '')
+    );
   }
 }

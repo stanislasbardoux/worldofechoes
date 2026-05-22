@@ -61,11 +61,12 @@
         [x]="editor().x"
         [y]="editor().y"
         [zones]="tomes.zones()"
-        [allLocations]="tomes.locations()"
+        [allTomes]="tomes.tomes()"
         (saved)="onFormSaved($event)"
         (cancelled)="onFormCancelled()"
         (deleted)="deleteLocation($event)"
         (coordsChanged)="onFormCoordsChanged($event)"
+        (tomeQualityChanged)="onTomeQualityChanged($event)"
       />
     } @else {
       <h3 class="admin__sidebar-title">
@@ -87,10 +88,10 @@
               <div class="admin__list-text">
                 <span
                   class="admin__list-name"
-                  [class.rarity-epic]="loc.rarity === 'epic'"
-                  [class.rarity-rare]="loc.rarity === 'rare'"
+                  [class.rarity-epic]="tomeQualityFor(loc) === 'epic'"
+                  [class.rarity-rare]="tomeQualityFor(loc) === 'rare'"
                 >
-                  {{ loc.tomeName }}
+                  {{ tomeNameFor(loc) }}
                 </span>
                 <span class="admin__list-place">{{ loc.placeName }}</span>
                 <span class="admin__list-coords">({{ loc.x }}%, {{ loc.y }}%)</span>

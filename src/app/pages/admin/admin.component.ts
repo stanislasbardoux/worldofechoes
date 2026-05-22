@@ -6,7 +6,10 @@ import {
   MapClickEvent,
 } from '../../components/map-viewer/map-viewer.component';
 import { ZoneSwitcherComponent } from '../../components/zone-switcher/zone-switcher.component';
-import { TomeFormComponent } from '../../components/tome-form/tome-form.component';
+import {
+  TomeFormComponent,
+  TomeFormSaveEvent,
+} from '../../components/tome-form/tome-form.component';
 import { TomeService } from '../../services/tome.service';
 import { FarmLocation, TomeRarity, ZoneId } from '../../models/tome.model';
 
@@ -23,7 +26,7 @@ interface EditorState {
   initial: FarmLocation | null;
   x: number;
   y: number;
-  rarity: TomeRarity;
+  tomeQuality: TomeRarity;
 }
 
 const CLOSED_EDITOR: EditorState = {
@@ -32,7 +35,7 @@ const CLOSED_EDITOR: EditorState = {
   initial: null,
   x: 0,
   y: 0,
-  rarity: 'epic',
+  tomeQuality: 'epic',
 };
 
 @Component({
@@ -72,11 +75,19 @@ export class AdminComponent {
   protected readonly draftPin = computed<DraftPin | null>(() => {
     const ed = this.editor();
     if (!ed.open || ed.initial) return null;
-    return { x: ed.x, y: ed.y, rarity: ed.rarity };
+    return { x: ed.x, y: ed.y, rarity: ed.tomeQuality };
   });
 
   constructor() {
     this.tomes.load();
+  }
+
+  protected tomeNameFor(loc: FarmLocation): string {
+    return this.tomes.getTomeName(loc.tomeId);
+  }
+
+  protected tomeQualityFor(loc: FarmLocation): TomeRarity {
+    return this.tomes.getTomeQuality(loc.tomeId);
   }
 
   // ──────────────────────────────────────────────────────────────────
@@ -122,11 +133,18 @@ export class AdminComponent {
     this.editor.set({ ...current, x: ev.x, y: ev.y });
   }
 
-  protected onFormSaved(loc: FarmLocation): void {
-    this.tomes.upsert(loc);
-    this.selectedLocationId.set(loc.id);
-    if (loc.zone !== this.selectedZoneId()) {
-      this.selectedZoneId.set(loc.zone);
+  protected onTomeQualityChanged(quality: TomeRarity): void {
+    const current = this.editor();
+    if (!current.open) return;
+    this.editor.set({ ...current, tomeQuality: quality });
+  }
+
+  protected onFormSaved(ev: TomeFormSaveEvent): void {
+    this.tomes.upsertTome(ev.tome);
+    this.tomes.upsert(ev.location);
+    this.selectedLocationId.set(ev.location.id);
+    if (ev.location.zone !== this.selectedZoneId()) {
+      this.selectedZoneId.set(ev.location.zone);
     }
     this.closeEditor();
   }
@@ -140,7 +158,9 @@ export class AdminComponent {
   }
 
   protected deleteLocation(loc: FarmLocation): void {
-    const ok = confirm(`Delete "${loc.placeName}" for ${loc.tomeName}?`);
+    const ok = confirm(
+      `Delete "${loc.placeName}" for ${this.tomeNameFor(loc)}?`,
+    );
     if (!ok) return;
     this.tomes.remove(loc.id);
     if (this.selectedLocationId() === loc.id) {
@@ -179,7 +199,7 @@ export class AdminComponent {
       initial: null,
       x,
       y,
-      rarity: 'epic',
+      tomeQuality: 'epic',
     });
     this.selectedLocationId.set(null);
   }
@@ -194,7 +214,7 @@ export class AdminComponent {
       initial: loc,
       x: loc.x,
       y: loc.y,
-      rarity: loc.rarity,
+      tomeQuality: this.tomes.getTomeQuality(loc.tomeId),
     });
     this.selectedLocationId.set(loc.id);
   }

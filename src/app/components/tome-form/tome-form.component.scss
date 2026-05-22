@@ -46,6 +46,63 @@
     grid-column: 1 / -1;
   }
 
+  &__combobox {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+
+    input {
+      flex: 1 1 auto;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &__combobox-toggle {
+    flex: 0 0 auto;
+    width: 36px;
+    padding: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+    background: var(--woe-bg-2);
+    color: var(--woe-text);
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+
+    &:hover {
+      background: var(--woe-panel-2);
+    }
+  }
+
+  &__combobox-list {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    right: 0;
+    z-index: 20;
+    margin: 0;
+    padding: 4px 0;
+    list-style: none;
+    max-height: 220px;
+    overflow-y: auto;
+    background: var(--woe-panel);
+    border: 1px solid var(--woe-border);
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+    li {
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 13px;
+
+      &:hover {
+        background: var(--woe-bg-2);
+      }
+    }
+  }
+
   &__specs {
     display: flex;
     flex-wrap: wrap;
