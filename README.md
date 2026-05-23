@@ -69,7 +69,7 @@ Output is written to `dist/world-of-echoes/browser/`. That folder is what you up
 8. Click **Download tomes.json** → save the file.
 9. Replace `src/assets/data/tomes.json` with the downloaded one and commit it.
 
-> Drafts are auto-saved to `localStorage` so you can refresh without losing work. Use **Discard draft** to start over from the on-disk JSON.
+> Drafts are auto-saved to `localStorage` while you work in the admin UI so you can refresh without losing work. The public map always reads the committed `tomes.json`; only `/admin` applies the draft. Use **Discard draft** to drop the local draft and reload from the on-disk JSON.
 
 ### Option B — Edit the JSON by hand
 

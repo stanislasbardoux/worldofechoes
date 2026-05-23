@@ -68,26 +68,14 @@ export class TomeService {
   });
 
   /**
-   * Initial load: try localStorage draft first (debug authoring), fall back
-   * to the bundled JSON file.
+   * Initial load: always read the bundled tomes.json.
+   *
+   * Admin edits are mirrored into localStorage as a draft, but that draft
+   * is only applied on the /admin page (see {@link applyDraftIfPresent}).
+   * The public map always reflects the committed JSON in assets/.
    */
   async load(): Promise<void> {
     if (this._loaded()) return;
-
-    const draft = this.readDraft();
-    if (draft) {
-      // Drafts snapshot `zones` into localStorage. After we change map
-      // URLs (e.g. .png → .webp) or paths, an old draft still wins load
-      // order and would 404 every image. Zone metadata (paths) always
-      // comes from the built-in ZONE_LIST; we only keep authored pins
-      // from the draft.
-      this._zones.set(ZONE_LIST);
-      this._tomes.set(draft.tomes ?? []);
-      this._locations.set(draft.locations ?? []);
-      this.persistDraft();
-      this._loaded.set(true);
-      return;
-    }
 
     try {
       const data = await firstValueFrom(
@@ -104,6 +92,19 @@ export class TomeService {
     } finally {
       this._loaded.set(true);
     }
+  }
+
+  /**
+   * Overlay the localStorage admin draft onto the in-memory state.
+   * Called by the admin page after {@link load} so authoring survives
+   * refreshes without affecting the public map view.
+   */
+  applyDraftIfPresent(): void {
+    const draft = this.readDraft();
+    if (!draft) return;
+    this._zones.set(ZONE_LIST);
+    this._tomes.set(draft.tomes ?? this._tomes());
+    this._locations.set(draft.locations ?? this._locations());
   }
 
   getZone(id: ZoneId): ZoneConfig | undefined {

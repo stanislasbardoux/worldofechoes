@@ -79,7 +79,12 @@ export class AdminComponent {
   });
 
   constructor() {
-    this.tomes.load();
+    void this.initAdmin();
+  }
+
+  private async initAdmin(): Promise<void> {
+    await this.tomes.load();
+    this.tomes.applyDraftIfPresent();
   }
 
   protected tomeNameFor(loc: FarmLocation): string {

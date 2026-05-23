@@ -474,7 +474,7 @@
     },
     {
       "id": "tome-nature-surge",
-      "name": "Nature Surge",
+      "name": "Nature's Surge",
       "quality": "rare",
       "description": "Casting a spell or ability has a chance to make your next eligible spell instant-cast. Eligible spells: Wrath, Starfire. Healing: Healing Touch, Nourish, Regrowth."
     },
@@ -497,8 +497,8 @@
       "description": "When a target dies while affected by one of your damage-over-time effects, that effect spreads to all enemies within 20 yards."
     },
     {
-      "id": "tome-permafrost",
-      "name": "Permafrost",
+      "id": "tome-permafrost-aura",
+      "name": "Permafrost Aura",
       "quality": "rare",
       "description": "While in combat, you deal @sp0.16+ap0.08@ Frost damage every 2 sec to enemies within 8 yards. This effect deals at least 5 damage. Enemies hit have their attack speed reduced by 5% for 3 sec."
     },
@@ -969,8 +969,8 @@
       "id": "import-657cbea7-cc3a-cb3a-ca3ae0e9",
       "tomeId": "tome-brittle-forging",
       "zone": "northrend",
-      "x": 58.4,
-      "y": 12.3,
+      "x": 58.1,
+      "y": 11.8,
       "placeName": "Ulduar",
       "mobs": [
         "Ignis the Furnace Master"
@@ -996,7 +996,7 @@
       "tomeId": "tome-call-of-the-lich-king",
       "zone": "northrend",
       "x": 58.3,
-      "y": 58.6,
+      "y": 58.3,
       "placeName": "Naxxramas",
       "mobs": [
         "Kel'Thuzad"
@@ -1021,8 +1021,8 @@
       "id": "import-242363ad-b327-b227-ad277d13",
       "tomeId": "tome-constellations",
       "zone": "northrend",
-      "x": 57.5,
-      "y": 12.2,
+      "x": 57.7,
+      "y": 11.8,
       "placeName": "Ulduar",
       "mobs": [
         "Algalon the Observer"
@@ -1035,7 +1035,7 @@
       "tomeId": "tome-crypt-lord-s-swarm",
       "zone": "northrend",
       "x": 58.2,
-      "y": 58.7,
+      "y": 58.6,
       "placeName": "Naxxramas",
       "mobs": [
         "Anub'Rekhan"
@@ -1047,8 +1047,8 @@
       "id": "import-dc3f5e4a-f7df-f8df-f9df3b6c",
       "tomeId": "tome-drillmaster-s-rebuke",
       "zone": "northrend",
-      "x": 58.9,
-      "y": 11.2,
+      "x": 58.1,
+      "y": 11.5,
       "placeName": "Ulduar",
       "mobs": [
         "Instructor Razuvious"
@@ -1073,8 +1073,8 @@
       "id": "import-f4e0ff0b-dc47-db47-e247f235",
       "tomeId": "tome-edict-of-the-iron-council",
       "zone": "northrend",
-      "x": 58.6,
-      "y": 10.7,
+      "x": 58.1,
+      "y": 11.2,
       "placeName": "Ulduar",
       "mobs": [
         "Assembly of Iron"
@@ -1099,8 +1099,8 @@
       "id": "import-25cbc293-64a9-63a9-6aa9b32d",
       "tomeId": "tome-eonar-s-seed",
       "zone": "northrend",
-      "x": 56.6,
-      "y": 9.6,
+      "x": 57.9,
+      "y": 10.6,
       "placeName": "Ulduar",
       "mobs": [
         "Freya"
@@ -1112,8 +1112,8 @@
       "id": "import-62b8a2d2-032d-042d-052d1be4",
       "tomeId": "tome-exposed-heart",
       "zone": "northrend",
-      "x": 59.1,
-      "y": 10,
+      "x": 58.1,
+      "y": 10.9,
       "placeName": "Ulduar",
       "mobs": [
         "XT-002 Deconstructor"
@@ -1125,8 +1125,8 @@
       "id": "import-22703cec-c8b2-c9b2-ceb2dce2",
       "tomeId": "tome-flame-vents",
       "zone": "northrend",
-      "x": 58.2,
-      "y": 11.4,
+      "x": 57.9,
+      "y": 11.2,
       "placeName": "Ulduar",
       "mobs": [
         "Flame Leviathan"
@@ -1138,8 +1138,8 @@
       "id": "import-64dd9333-6105-6005-670585cd",
       "tomeId": "tome-frostfire-paradox",
       "zone": "northrend",
-      "x": 56.7,
-      "y": 11.8,
+      "x": 57.7,
+      "y": 11.5,
       "placeName": "Ulduar",
       "mobs": [
         "Hodir"
@@ -1151,8 +1151,8 @@
       "id": "import-9d3d0501-50fb-4ffb-52fb304f",
       "tomeId": "tome-hungering-curse",
       "zone": "northrend",
-      "x": 34.3,
-      "y": 47.6,
+      "x": 34.1,
+      "y": 48,
       "placeName": "Wintergrasp west side, near blackened area",
       "mobs": [
         "Wandering Shadow"
@@ -1164,8 +1164,8 @@
       "id": "import-6b39acd7-0cea-0bea-0aeaf219",
       "tomeId": "tome-idol-of-yogg-saron",
       "zone": "northrend",
-      "x": 58.3,
-      "y": 9.4,
+      "x": 57.9,
+      "y": 10.9,
       "placeName": "Ulduar",
       "mobs": [
         "Yogg-Saron"
@@ -1177,8 +1177,8 @@
       "id": "import-dd318fb3-bacd-b9cd-c0cd164d",
       "tomeId": "tome-lightning-charged",
       "zone": "northrend",
-      "x": 57.4,
-      "y": 9.3,
+      "x": 58.1,
+      "y": 10.6,
       "placeName": "Ulduar",
       "mobs": [
         "Thorim"
@@ -1191,7 +1191,7 @@
       "tomeId": "tome-mutagenic-fumes",
       "zone": "northrend",
       "x": 58.3,
-      "y": 58.6,
+      "y": 58.5,
       "placeName": "Naxxramas",
       "mobs": [
         "Grobbulus"
@@ -1229,8 +1229,8 @@
       "id": "import-a9775c85-69a5-68a5-63a5f0db",
       "tomeId": "tome-rocket-strike",
       "zone": "northrend",
-      "x": 56.7,
-      "y": 10.5,
+      "x": 57.7,
+      "y": 10.9,
       "placeName": "Ulduar",
       "mobs": [
         "Mimiron"
@@ -1242,7 +1242,7 @@
       "id": "import-d65a040e-a354-a454-9d549438",
       "tomeId": "tome-sanctum-sentries",
       "zone": "northrend",
-      "x": 57.6,
+      "x": 57.7,
       "y": 10.6,
       "placeName": "Ulduar",
       "mobs": [
@@ -1255,7 +1255,7 @@
       "id": "import-0cea3d9d-24c2-23c2-1ec2c003",
       "tomeId": "tome-shadow-crash",
       "zone": "northrend",
-      "x": 57.3,
+      "x": 57.7,
       "y": 11.2,
       "placeName": "Ulduar",
       "mobs": [
@@ -1337,7 +1337,9 @@
       "y": 76.8,
       "placeName": "Tomb of Lights",
       "mobs": [
-        "Ethereal Nethermancer"
+        "Ethereal Arcanist",
+        "Plunderer",
+        "Nethermancer"
       ],
       "specs": [],
       "notes": "Source: Open World\n\nhttps://www.wowhead.com/wotlk/npc=21405/ethereal-arcanist"
@@ -1559,7 +1561,7 @@
     },
     {
       "id": "7cce8b91-deb3-4f41-8868-0b4413e95ce7",
-      "tomeId": "tome-permafrost",
+      "tomeId": "tome-permafrost-aura",
       "zone": "northrend",
       "x": 35.9,
       "y": 58.6,
@@ -1858,19 +1860,6 @@
       ],
       "specs": [],
       "notes": "Near cauldrons"
-    },
-    {
-      "id": "e2f7e016-6d42-4a2f-8a7e-e674f3e86134",
-      "tomeId": "tome-quickened-tempo",
-      "zone": "outland",
-      "x": 53,
-      "y": 78.8,
-      "placeName": "Terrokar Forest - Bonechewer Ruins",
-      "mobs": [
-        "Red Orcs"
-      ],
-      "specs": [],
-      "notes": "to be confirmed"
     },
     {
       "id": "7fefb43f-bbba-4af0-a165-67a84a7b0f52",
@@ -2186,101 +2175,14 @@
       "specs": []
     },
     {
-      "id": "echo-import-tome-accelerated-decay",
-      "tomeId": "tome-accelerated-decay",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Crystalsong Forest - Forlorn Woods - Crystalsong Forest",
-      "mobs": [
-        "Sinewy Wolf"
-      ],
-      "specs": [],
-      "notes": "Open World"
-    },
-    {
-      "id": "echo-import-tome-adaptive-power",
-      "tomeId": "tome-adaptive-power",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Terokkar Forest - Tomb of Lights - Terokkar Forest",
-      "mobs": [
-        "Ethereal Arcanist",
-        "Plunderer",
-        "Nethermancer"
-      ],
-      "specs": [],
-      "notes": "Open World"
-    },
-    {
-      "id": "echo-import-tome-ambidexterity",
-      "tomeId": "tome-ambidexterity",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Stranglethorn Vale - Booty Bay (north bandit camp) - Stranglethorn Vale",
-      "mobs": [
-        "Bloodsail Raider"
-      ],
-      "specs": [],
-      "notes": "Open World"
-    },
-    {
-      "id": "echo-import-tome-armor-mastery",
-      "tomeId": "tome-armor-mastery",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Silverpine Forest - Pyrewood Village - Silverpine Forest",
-      "mobs": [
-        "Moonrage Armorer"
-      ],
-      "specs": [],
-      "notes": "Open World"
-    },
-    {
-      "id": "echo-import-tome-brittle-forging",
-      "tomeId": "tome-brittle-forging",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "The Storm Peaks - Ulduar",
-      "mobs": [
-        "Ignis the Furnace Master"
-      ],
-      "specs": [],
-      "notes": "Raid"
-    },
-    {
       "id": "echo-import-tome-broodmother-s-fury",
       "tomeId": "tome-broodmother-s-fury",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-broodmother-s-webbing",
-      "tomeId": "tome-broodmother-s-webbing",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-call-of-the-lich-king",
-      "tomeId": "tome-call-of-the-lich-king",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Dragonblight - Naxxramas",
+      "x": 64.8,
+      "y": 71.5,
+      "placeName": "Onyxia's Lair",
       "mobs": [
-        "Kel'Thuzad"
+        "Onyxia"
       ],
       "specs": [],
       "notes": "Raid"
@@ -2288,45 +2190,12 @@
     {
       "id": "echo-import-tome-champion-s-rally",
       "tomeId": "tome-champion-s-rally",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-chill-of-the-bone-wyrm",
-      "tomeId": "tome-chill-of-the-bone-wyrm",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Dragonblight - Naxxramas",
+      "zone": "northrend",
+      "x": 45.3,
+      "y": 19.7,
+      "placeName": "Trial of the Crusader",
       "mobs": [
-        "Sapphiron"
-      ],
-      "specs": [],
-      "notes": "Raid"
-    },
-    {
-      "id": "echo-import-tome-cinders-of-the-sanctum",
-      "tomeId": "tome-cinders-of-the-sanctum",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-constellations",
-      "tomeId": "tome-constellations",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "The Storm Peaks - Ulduar",
-      "mobs": [
-        "Algalon the Observer"
+        "Champions"
       ],
       "specs": [],
       "notes": "Raid"
@@ -2334,9 +2203,9 @@
     {
       "id": "echo-import-tome-contagion",
       "tomeId": "tome-contagion",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "eastern-kingdoms",
+      "x": 70,
+      "y": 22,
       "placeName": "The Hinterlands - Skulk Rock - The Hinterlands",
       "mobs": [
         "Jade Ooze"
@@ -2345,149 +2214,37 @@
       "notes": "Open World"
     },
     {
-      "id": "echo-import-tome-crypt-lord-s-swarm",
-      "tomeId": "tome-crypt-lord-s-swarm",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
       "id": "echo-import-tome-curse-of-the-plaguebringer",
       "tomeId": "tome-curse-of-the-plaguebringer",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
+      "zone": "northrend",
+      "x": 58.1,
+      "y": 58.3,
+      "placeName": "Naxxramas",
+      "mobs": [
+        "Noth The Plaguebringer"
+      ],
+      "specs": [],
+      "notes": "Raid"
     },
     {
       "id": "echo-import-tome-demonic-awakening",
       "tomeId": "tome-demonic-awakening",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 55.5,
+      "y": 7.5,
       "placeName": "Unknown location",
       "mobs": [],
       "specs": []
-    },
-    {
-      "id": "echo-import-tome-drillmaster-s-rebuke",
-      "tomeId": "tome-drillmaster-s-rebuke",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-edict-of-the-four",
-      "tomeId": "tome-edict-of-the-four",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Dragonblight - Naxxramas",
-      "mobs": [
-        "The Four Horsemen"
-      ],
-      "specs": [],
-      "notes": "Raid"
-    },
-    {
-      "id": "echo-import-tome-edict-of-the-iron-council",
-      "tomeId": "tome-edict-of-the-iron-council",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "The Storm Peaks - Ulduar",
-      "mobs": [
-        "Assembly of Iron"
-      ],
-      "specs": [],
-      "notes": "Raid"
-    },
-    {
-      "id": "echo-import-tome-eonar-s-seed",
-      "tomeId": "tome-eonar-s-seed",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-exposed-heart",
-      "tomeId": "tome-exposed-heart",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "The Storm Peaks - Ulduar",
-      "mobs": [
-        "XT-002 Deconstructor"
-      ],
-      "specs": [],
-      "notes": "Raid"
-    },
-    {
-      "id": "echo-import-tome-flame-vents",
-      "tomeId": "tome-flame-vents",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "The Storm Peaks - Ulduar",
-      "mobs": [
-        "Flame Leviathan"
-      ],
-      "specs": [],
-      "notes": "Raid"
-    },
-    {
-      "id": "echo-import-tome-frostfire-paradox",
-      "tomeId": "tome-frostfire-paradox",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "The Storm Peaks - Ulduar",
-      "mobs": [
-        "Hodir"
-      ],
-      "specs": [],
-      "notes": "Raid"
     },
     {
       "id": "echo-import-tome-harpoon-barrage",
       "tomeId": "tome-harpoon-barrage",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-heavy-incantations",
-      "tomeId": "tome-heavy-incantations",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-idol-of-yogg-saron",
-      "tomeId": "tome-idol-of-yogg-saron",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "The Storm Peaks - Ulduar",
+      "zone": "northrend",
+      "x": 57.9,
+      "y": 11.8,
+      "placeName": "Ulduar",
       "mobs": [
-        "Yogg-Saron"
+        "Razorscale"
       ],
       "specs": [],
       "notes": "Raid"
@@ -2496,8 +2253,8 @@
       "id": "echo-import-tome-impaler-s-tribute",
       "tomeId": "tome-impaler-s-tribute",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 53.5,
+      "y": 7,
       "placeName": "Unknown location",
       "mobs": [],
       "specs": []
@@ -2506,8 +2263,8 @@
       "id": "echo-import-tome-inspiring-mending",
       "tomeId": "tome-inspiring-mending",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 53.4,
+      "y": 6,
       "placeName": "Unknown location",
       "mobs": [],
       "specs": []
@@ -2515,9 +2272,9 @@
     {
       "id": "echo-import-tome-leeching-swarm",
       "tomeId": "tome-leeching-swarm",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "northrend",
+      "x": 45.2,
+      "y": 19.7,
       "placeName": "Icecrown - Trial of the Crusader",
       "mobs": [
         "Anub'arak"
@@ -2526,57 +2283,34 @@
       "notes": "Raid"
     },
     {
-      "id": "echo-import-tome-lightning-charged",
-      "tomeId": "tome-lightning-charged",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "The Storm Peaks - Ulduar",
-      "mobs": [
-        "Thorim"
-      ],
-      "specs": [],
-      "notes": "Raid"
-    },
-    {
       "id": "echo-import-tome-lingering-inspiration",
       "tomeId": "tome-lingering-inspiration",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 54,
+      "y": 5.1,
       "placeName": "Unknown location",
       "mobs": [],
       "specs": []
-    },
-    {
-      "id": "echo-import-tome-mutagenic-fumes",
-      "tomeId": "tome-mutagenic-fumes",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Dragonblight - Naxxramas",
-      "mobs": [
-        "Grobbulus"
-      ],
-      "specs": [],
-      "notes": "Raid"
     },
     {
       "id": "echo-import-tome-nether-lord-s-command",
       "tomeId": "tome-nether-lord-s-command",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
+      "zone": "northrend",
+      "x": 45.3,
+      "y": 19.6,
+      "placeName": "Trial of the Crusader",
+      "mobs": [
+        "Lord Jaraxxus"
+      ],
+      "specs": [],
+      "notes": "Raid"
     },
     {
       "id": "echo-import-tome-overwhelming-restoration",
       "tomeId": "tome-overwhelming-restoration",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 55.2,
+      "y": 6.5,
       "placeName": "Unknown location",
       "mobs": [],
       "specs": []
@@ -2584,9 +2318,9 @@
     {
       "id": "echo-import-tome-pandemic",
       "tomeId": "tome-pandemic",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "eastern-kingdoms",
+      "x": 47.1,
+      "y": 15,
       "placeName": "Western Plaguelands - Dalson's Tears - Western Plaguelands",
       "mobs": [
         "Rotting Cadaver",
@@ -2596,24 +2330,11 @@
       "notes": "Open World"
     },
     {
-      "id": "echo-import-tome-polarity-shift",
-      "tomeId": "tome-polarity-shift",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Dragonblight - Naxxramas",
-      "mobs": [
-        "Thaddius"
-      ],
-      "specs": [],
-      "notes": "Raid"
-    },
-    {
       "id": "echo-import-tome-quickened-tempo",
       "tomeId": "tome-quickened-tempo",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "outland",
+      "x": 52.7,
+      "y": 79,
       "placeName": "Terokkar Forest - Bonechewer Ruins - Terokkar Forest",
       "mobs": [
         "Bonechewer Backbreaker"
@@ -2624,9 +2345,9 @@
     {
       "id": "echo-import-tome-rage-of-the-colossus",
       "tomeId": "tome-rage-of-the-colossus",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "northrend",
+      "x": 45.2,
+      "y": 19.6,
       "placeName": "Icecrown - Trial of the Crusader",
       "mobs": [
         "Icehowl"
@@ -2635,106 +2356,11 @@
       "notes": "Raid"
     },
     {
-      "id": "echo-import-tome-ravenous-bellow",
-      "tomeId": "tome-ravenous-bellow",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Dragonblight - Naxxramas",
-      "mobs": [
-        "Gluth"
-      ],
-      "specs": [],
-      "notes": "Raid"
-    },
-    {
-      "id": "echo-import-tome-reaper-s-doom",
-      "tomeId": "tome-reaper-s-doom",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-reaper-s-verdict",
-      "tomeId": "tome-reaper-s-verdict",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-resonant-build",
-      "tomeId": "tome-resonant-build",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Silithus - Southwind Village - Silithus",
-      "mobs": [
-        "Tortured Druids"
-      ],
-      "specs": [],
-      "notes": "Open World"
-    },
-    {
-      "id": "echo-import-tome-rocket-strike",
-      "tomeId": "tome-rocket-strike",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "The Storm Peaks - Ulduar",
-      "mobs": [
-        "Mimiron"
-      ],
-      "specs": [],
-      "notes": "Raid"
-    },
-    {
-      "id": "echo-import-tome-sanctum-sentries",
-      "tomeId": "tome-sanctum-sentries",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "The Storm Peaks - Ulduar",
-      "mobs": [
-        "Auriaya"
-      ],
-      "specs": [],
-      "notes": "Raid"
-    },
-    {
-      "id": "echo-import-tome-sanguine-bulwark",
-      "tomeId": "tome-sanguine-bulwark",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-shadow-crash",
-      "tomeId": "tome-shadow-crash",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "The Storm Peaks - Ulduar",
-      "mobs": [
-        "General Vezax"
-      ],
-      "specs": [],
-      "notes": "Raid"
-    },
-    {
       "id": "echo-import-tome-slimebound-husk",
       "tomeId": "tome-slimebound-husk",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "northrend",
+      "x": 45.2,
+      "y": 19.5,
       "placeName": "Icecrown - Trial of the Crusader",
       "mobs": [
         "Icehowl"
@@ -2745,32 +2371,25 @@
     {
       "id": "echo-import-tome-stitched-fury",
       "tomeId": "tome-stitched-fury",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
+      "zone": "northrend",
+      "x": 58.1,
+      "y": 58.5,
+      "placeName": "Ulduar",
+      "mobs": [
+        "Patchwerk"
+      ],
+      "specs": [],
+      "notes": "Raid"
     },
     {
       "id": "echo-import-tome-stone-shatter",
       "tomeId": "tome-stone-shatter",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-storm-of-the-spellweaver",
-      "tomeId": "tome-storm-of-the-spellweaver",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Borean Tundra - Coldarra - The Eye of Eternity",
+      "zone": "northrend",
+      "x": 57.9,
+      "y": 11.5,
+      "placeName": "Ulduar",
       "mobs": [
-        "Malygos"
+        "Kologarn"
       ],
       "specs": [],
       "notes": "Raid"
@@ -2779,8 +2398,8 @@
       "id": "echo-import-tome-temporal-pressure",
       "tomeId": "tome-temporal-pressure",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 71.8,
+      "y": 86.4,
       "placeName": "Caverns of Time - The Culling of Stratholme",
       "mobs": [
         "Chrono-Lord Epoch"
@@ -2789,54 +2408,11 @@
       "notes": "Dungeon"
     },
     {
-      "id": "echo-import-tome-the-harvester-s-tithe",
-      "tomeId": "tome-the-harvester-s-tithe",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-the-sporelord-s-gift",
-      "tomeId": "tome-the-sporelord-s-gift",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-the-unclean-s-fever",
-      "tomeId": "tome-the-unclean-s-fever",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-titan-s-grip",
-      "tomeId": "tome-titan-s-grip",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Tirisfal Glades - Scarlet Monastery - Hall of Champions",
-      "mobs": [
-        "Herod, Scarlet Champion"
-      ],
-      "specs": [],
-      "notes": "Dungeon"
-    },
-    {
       "id": "echo-import-tome-twilight-equilibrium",
       "tomeId": "tome-twilight-equilibrium",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "northrend",
+      "x": 45.3,
+      "y": 19.5,
       "placeName": "Icecrown - Trial of the Crusader",
       "mobs": [
         "Fjola Lightbane"
@@ -2845,221 +2421,88 @@
       "notes": "Raid"
     },
     {
-      "id": "echo-import-tome-weapon-mastery",
-      "tomeId": "tome-weapon-mastery",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Hellfire Peninsula - Shattered Halls",
-      "mobs": [
-        "Warrior mobs"
-      ],
-      "specs": [],
-      "notes": "Dungeon"
-    },
-    {
-      "id": "echo-import-tome-widow-s-venom",
-      "tomeId": "tome-widow-s-venom",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-arcane-burn",
-      "tomeId": "tome-arcane-burn",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Terokkar Forest - Tomb of Lights; also Blade's Edge - Bash'ir Landing - Terokkar Forest",
-      "mobs": [
-        "Ethereal Arcanist",
-        "Plunderer"
-      ],
-      "specs": [],
-      "notes": "Open World"
-    },
-    {
-      "id": "echo-import-tome-arcane-cadence",
-      "tomeId": "tome-arcane-cadence",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Terokkar Forest - Tomb of Lights - Terokkar Forest",
-      "mobs": [
-        "Ethereal Plunderers",
-        "Arcanists"
-      ],
-      "specs": [],
-      "notes": "Open World"
-    },
-    {
-      "id": "echo-import-tome-arcane-density",
-      "tomeId": "tome-arcane-density",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Western Plaguelands - Hearthglen - Western Plaguelands",
-      "mobs": [
-        "Scarlet Paladins"
-      ],
-      "specs": [],
-      "notes": "Open World"
-    },
-    {
       "id": "echo-import-tome-arcane-hazard",
       "tomeId": "tome-arcane-hazard",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 65.6,
+      "y": 7.5,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-arcane-surge",
-      "tomeId": "tome-arcane-surge",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Stranglethorn Vale - Booty Bay (north bandit camp) - Stranglethorn Vale",
-      "mobs": [
-        "Bloodsail Mage",
-        "Raider"
-      ],
       "specs": [],
-      "notes": "Open World"
+      "notes": "Found on enemies that use the abilities listed in the description"
     },
     {
       "id": "echo-import-tome-arcane-ward",
       "tomeId": "tome-arcane-ward",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 63.7,
+      "y": 5.3,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-archmage-mark",
-      "tomeId": "tome-archmage-mark",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-battle-rhythm",
-      "tomeId": "tome-battle-rhythm",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Burning Steppes - Blackrock Stronghold - Burning Steppes",
-      "mobs": [
-        "Blackrock Stronghold mobs"
-      ],
       "specs": [],
-      "notes": "Open World"
+      "notes": "Found on arcane type enemies"
     },
     {
       "id": "echo-import-tome-battlefield-hazard",
       "tomeId": "tome-battlefield-hazard",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 65.2,
+      "y": 5.1,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-beast-bane",
-      "tomeId": "tome-beast-bane",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Crystalsong Forest - Forlorn Woods - Crystalsong Forest",
-      "mobs": [
-        "Sinewy Wolf"
-      ],
       "specs": [],
-      "notes": "Open World"
+      "notes": "Found on enemies that use warrior abilities"
     },
     {
       "id": "echo-import-tome-beast-slayer",
       "tomeId": "tome-beast-slayer",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 59.3,
+      "y": 5.5,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on beast type enemies"
     },
     {
       "id": "echo-import-tome-blighted-hazard",
       "tomeId": "tome-blighted-hazard",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 62.2,
+      "y": 4.2,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-crusader-s-surge",
-      "tomeId": "tome-crusader-s-surge",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Western Plaguelands - Hearthglen - Western Plaguelands",
-      "mobs": [
-        "Scarlet Paladins"
-      ],
       "specs": [],
-      "notes": "Open World"
-    },
-    {
-      "id": "echo-import-tome-crushing-finish",
-      "tomeId": "tome-crushing-finish",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Burning Steppes - Blackrock Stronghold - Burning Steppes",
-      "mobs": [
-        "Blackrock Slayer"
-      ],
-      "specs": [],
-      "notes": "Open World"
+      "notes": "Found on enemies that use death knight type spells"
     },
     {
       "id": "echo-import-tome-demon-bane",
       "tomeId": "tome-demon-bane",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 57.2,
+      "y": 4.6,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on demon type enemies"
     },
     {
       "id": "echo-import-tome-demon-slayer",
       "tomeId": "tome-demon-slayer",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 61.2,
+      "y": 3.1,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on demon type enemies"
     },
     {
       "id": "echo-import-tome-divine-surge",
       "tomeId": "tome-divine-surge",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "eastern-kingdoms",
+      "x": 85.5,
+      "y": 16.1,
       "placeName": "Eastern Plaguelands - Tyr's Hand; also Shattered Halls - Eastern Plaguelands",
       "mobs": [
         "Clerics",
@@ -3072,61 +2515,52 @@
       "id": "echo-import-tome-dragon-slayer",
       "tomeId": "tome-dragon-slayer",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 63.9,
+      "y": 2.6,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on dragon type enemies"
     },
     {
       "id": "echo-import-tome-dragonkin-bane",
       "tomeId": "tome-dragonkin-bane",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 62,
+      "y": 7,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on dragon type enemies"
     },
     {
       "id": "echo-import-tome-earthen-snap",
       "tomeId": "tome-earthen-snap",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 61.7,
+      "y": 5.5,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on Entangling Roots type caster enemies"
     },
     {
       "id": "echo-import-tome-earthen-spike",
       "tomeId": "tome-earthen-spike",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 60.1,
+      "y": 4.4,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on earth elemental type enemies"
     },
     {
       "id": "echo-import-tome-echoing-tides",
       "tomeId": "tome-echoing-tides",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Crystalsong Forest - Forlorn Woods - Crystalsong Forest",
-      "mobs": [
-        "Grove Walker"
-      ],
-      "specs": [],
-      "notes": "Open World"
-    },
-    {
-      "id": "echo-import-tome-elemental-bane",
-      "tomeId": "tome-elemental-bane",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "northrend",
+      "x": 51.1,
+      "y": 42.7,
       "placeName": "Crystalsong Forest - Forlorn Woods - Crystalsong Forest",
       "mobs": [
         "Grove Walker"
@@ -3138,54 +2572,19 @@
       "id": "echo-import-tome-elemental-slayer",
       "tomeId": "tome-elemental-slayer",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 59.1,
+      "y": 6.6,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-ember-ward",
-      "tomeId": "tome-ember-ward",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Wintergrasp - south east flame region - Wintergrasp",
-      "mobs": [
-        "Raging Flame"
-      ],
       "specs": [],
-      "notes": "Open World"
-    },
-    {
-      "id": "echo-import-tome-emberlord-s-gift",
-      "tomeId": "tome-emberlord-s-gift",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-entropic-fusion",
-      "tomeId": "tome-entropic-fusion",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Blade's Edge Mountains - Forge Camp: Wrath - Hellfire Peninsula",
-      "mobs": [
-        "Demons"
-      ],
-      "specs": [],
-      "notes": "Open World"
+      "notes": "Found on elemental type enemies"
     },
     {
       "id": "echo-import-tome-essence-tap",
       "tomeId": "tome-essence-tap",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 64.3,
+      "y": 6.4,
       "placeName": "Unknown location",
       "mobs": [],
       "specs": []
@@ -3194,45 +2593,19 @@
       "id": "echo-import-tome-fel-hazard",
       "tomeId": "tome-fel-hazard",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 64.1,
+      "y": 4.4,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-fel-surge",
-      "tomeId": "tome-fel-surge",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Terokkar Forest - Tomb of Lights; also Stranglethorn Vale - Booty Bay (north bandit camp) - Terokkar Forest",
-      "mobs": [
-        "Ethereal Necromancer",
-        "Bloodsail Raider"
-      ],
       "specs": [],
-      "notes": "Open World"
-    },
-    {
-      "id": "echo-import-tome-fortress-soul",
-      "tomeId": "tome-fortress-soul",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Western Plaguelands - Scarlet Encampments - Western Plaguelands",
-      "mobs": [
-        "Scarlet Knights"
-      ],
-      "specs": [],
-      "notes": "Open World"
+      "notes": "Found on warlock type enemies"
     },
     {
       "id": "echo-import-tome-frost-bite",
       "tomeId": "tome-frost-bite",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "eastern-kingdoms",
+      "x": 50,
+      "y": 16.9,
       "placeName": "Western Plaguelands - The Writhing Haunt - Western Plaguelands",
       "mobs": [
         "Freezing Ghoul"
@@ -3244,38 +2617,41 @@
       "id": "echo-import-tome-frost-ward",
       "tomeId": "tome-frost-ward",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 66.9,
+      "y": 3.4,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on frost elemental type enemies"
     },
     {
       "id": "echo-import-tome-giant-bane",
       "tomeId": "tome-giant-bane",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 67.4,
+      "y": 5.7,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on giant type enemies"
     },
     {
       "id": "echo-import-tome-giant-slayer",
       "tomeId": "tome-giant-slayer",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 70.4,
+      "y": 6.9,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Fond on giant type enemies"
     },
     {
       "id": "echo-import-tome-healing-cadence",
       "tomeId": "tome-healing-cadence",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "outland",
+      "x": 41.6,
+      "y": 57.3,
       "placeName": "Zangarmarsh - southern path toward Nagrand/Shattrath - Zangarmarsh",
       "mobs": [
         "Seers (packs of 3)"
@@ -3287,41 +2663,30 @@
       "id": "echo-import-tome-holy-hazard",
       "tomeId": "tome-holy-hazard",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 68.3,
+      "y": 7.4,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-hungering-curse",
-      "tomeId": "tome-hungering-curse",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Wintergrasp - west side, near blackened area - Wintergrasp",
-      "mobs": [
-        "Wandering Shadow"
-      ],
       "specs": [],
-      "notes": "Open World"
+      "notes": "Found on enemies that use priest type spells"
     },
     {
       "id": "echo-import-tome-hunting-hazard",
       "tomeId": "tome-hunting-hazard",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 69.5,
+      "y": 5,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on enemies that use volley / multishot"
     },
     {
       "id": "echo-import-tome-insulated-soul",
       "tomeId": "tome-insulated-soul",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "eastern-kingdoms",
+      "x": 65.4,
+      "y": 6.6,
       "placeName": "Eastern Plaguelands - Stratholme - The Hoard",
       "mobs": [
         "Crimson Defender"
@@ -3333,91 +2698,63 @@
       "id": "echo-import-tome-machine-slayer",
       "tomeId": "tome-machine-slayer",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 69.8,
+      "y": 2.7,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on mechanical type enemies"
     },
     {
       "id": "echo-import-tome-mana-infusion",
       "tomeId": "tome-mana-infusion",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 72.3,
+      "y": 7.9,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on water elemental type enemies"
     },
     {
       "id": "echo-import-tome-mechanical-bane",
       "tomeId": "tome-mechanical-bane",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 73,
+      "y": 5.9,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on mechanical type enemies"
     },
     {
       "id": "echo-import-tome-nature-surge",
       "tomeId": "tome-nature-surge",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 72.8,
+      "y": 4.1,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-permafrost",
-      "tomeId": "tome-permafrost",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on druid type enemies"
     },
     {
       "id": "echo-import-tome-provoking-presence",
       "tomeId": "tome-provoking-presence",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 73.5,
+      "y": 2.6,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-raging-momentum",
-      "tomeId": "tome-raging-momentum",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Hellfire Peninsula - Shattered Halls",
-      "mobs": [
-        "Warrior-type mobs without shields or Execute"
-      ],
       "specs": [],
-      "notes": "Dungeon"
-    },
-    {
-      "id": "echo-import-tome-reaper-s-reprieve",
-      "tomeId": "tome-reaper-s-reprieve",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Unknown location",
-      "mobs": [],
-      "specs": []
+      "notes": "Found on tank type enemies"
     },
     {
       "id": "echo-import-tome-relentless-energy",
       "tomeId": "tome-relentless-energy",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "eastern-kingdoms",
+      "x": 26.3,
+      "y": 94,
       "placeName": "(see Subtle Presence) - Stranglethorn Vale",
       "mobs": [
         "Same mobs as Subtle Presence"
@@ -3429,38 +2766,41 @@
       "id": "echo-import-tome-rootbreaker",
       "tomeId": "tome-rootbreaker",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 76.4,
+      "y": 6.9,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on mobs that cast Entangling Roots"
     },
     {
       "id": "echo-import-tome-runic-momentum",
       "tomeId": "tome-runic-momentum",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 76.8,
+      "y": 5.2,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on death knight type enemies"
     },
     {
       "id": "echo-import-tome-sanctified-hazard",
       "tomeId": "tome-sanctified-hazard",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 75.9,
+      "y": 3.5,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on mobs that use paladin type spells"
     },
     {
       "id": "echo-import-tome-shadow-hazard",
       "tomeId": "tome-shadow-hazard",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "eastern-kingdoms",
+      "x": 30.9,
+      "y": 69.5,
       "placeName": "Elwynn Forest - north of Goldshire; also Stranglethorn Vale - Booty Bay (north bandit camp) - Elwynn Forest",
       "mobs": [
         "Defias Cutpurse",
@@ -3472,9 +2812,9 @@
     {
       "id": "echo-import-tome-shadow-ward",
       "tomeId": "tome-shadow-ward",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "northrend",
+      "x": 34,
+      "y": 49,
       "placeName": "Wintergrasp - west side, near blackened area - Wintergrasp",
       "mobs": [
         "Wandering Shadow"
@@ -3486,31 +2826,18 @@
       "id": "echo-import-tome-shielded-steps",
       "tomeId": "tome-shielded-steps",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 79.7,
+      "y": 7.5,
       "placeName": "Unknown location",
       "mobs": [],
       "specs": []
     },
     {
-      "id": "echo-import-tome-static-overflow",
-      "tomeId": "tome-static-overflow",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Wintergrasp - bottom right corner, next to fireplace - Wintergrasp",
-      "mobs": [
-        "Whispering Wind"
-      ],
-      "specs": [],
-      "notes": "Open World"
-    },
-    {
       "id": "echo-import-tome-steady-casting",
       "tomeId": "tome-steady-casting",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "eastern-kingdoms",
+      "x": 26.5,
+      "y": 94.1,
       "placeName": "Stranglethorn Vale - Booty Bay (north bandit camp) - Stranglethorn Vale",
       "mobs": [
         "Bloodsail Raider"
@@ -3521,9 +2848,9 @@
     {
       "id": "echo-import-tome-steady-grip",
       "tomeId": "tome-steady-grip",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "eastern-kingdoms",
+      "x": 26.2,
+      "y": 94,
       "placeName": "Stranglethorn Vale - Booty Bay (north bandit camp) - Stranglethorn Vale",
       "mobs": [
         "Bloodsail Raider"
@@ -3535,18 +2862,19 @@
       "id": "echo-import-tome-stoneskin-threads",
       "tomeId": "tome-stoneskin-threads",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 80.1,
+      "y": 2.7,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Drops on mobs that cast Frostbolt / Slow"
     },
     {
       "id": "echo-import-tome-stored-momentum",
       "tomeId": "tome-stored-momentum",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 80,
+      "y": 3.8,
       "placeName": "Unknown location",
       "mobs": [],
       "specs": []
@@ -3555,31 +2883,19 @@
       "id": "echo-import-tome-storm-hazard",
       "tomeId": "tome-storm-hazard",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 80.5,
+      "y": 4.9,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-storm-surge",
-      "tomeId": "tome-storm-surge",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Feralas - Feralas",
-      "mobs": [
-        "Grimtotem mobs"
-      ],
       "specs": [],
-      "notes": "Open World"
+      "notes": "Drop on shaman type mobs"
     },
     {
       "id": "echo-import-tome-subtle-presence",
       "tomeId": "tome-subtle-presence",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "eastern-kingdoms",
+      "x": 26.4,
+      "y": 94,
       "placeName": "Stranglethorn Vale - Booty Bay (north bandit camp); also see Relentless Energy - Stranglethorn Vale",
       "mobs": [
         "Bloodsail Raider",
@@ -3592,31 +2908,19 @@
       "id": "echo-import-tome-sundered-will",
       "tomeId": "tome-sundered-will",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 79.9,
+      "y": 5.9,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
-    },
-    {
-      "id": "echo-import-tome-the-last-wall",
-      "tomeId": "tome-the-last-wall",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Alterac Mountains - Alterac Mountains",
-      "mobs": [
-        "Giant Yetis"
-      ],
       "specs": [],
-      "notes": "Open World"
+      "notes": "Found on enemies that cast fear / psychic scream"
     },
     {
       "id": "echo-import-tome-undead-bane",
       "tomeId": "tome-undead-bane",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "eastern-kingdoms",
+      "x": 49.1,
+      "y": 18.5,
       "placeName": "Western Plaguelands - Sorrow Hill - Western Plaguelands",
       "mobs": [
         "Slavering Ghoul"
@@ -3627,9 +2931,9 @@
     {
       "id": "echo-import-tome-undead-slayer",
       "tomeId": "tome-undead-slayer",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "zone": "eastern-kingdoms",
+      "x": 49.1,
+      "y": 18.5,
       "placeName": "Western Plaguelands - Sorrow Hill - Western Plaguelands",
       "mobs": [
         "Slavering Ghoul"
@@ -3638,40 +2942,15 @@
       "notes": "Open World"
     },
     {
-      "id": "echo-import-tome-unstable-missiles",
-      "tomeId": "tome-unstable-missiles",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Blade's Edge Mountains - Bash'ir Landing - Blade's Edge Mountains",
-      "mobs": [
-        "Bash'ir Ethereals"
-      ],
-      "specs": [],
-      "notes": "Open World"
-    },
-    {
-      "id": "echo-import-tome-verdant-ward",
-      "tomeId": "tome-verdant-ward",
-      "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
-      "placeName": "Wintergrasp - bottom right corner, next to fireplace - Wintergrasp",
-      "mobs": [
-        "Whispering Wind"
-      ],
-      "specs": [],
-      "notes": "Open World"
-    },
-    {
       "id": "echo-import-tome-wild-hazard",
       "tomeId": "tome-wild-hazard",
       "zone": "kalimdor",
-      "x": 10,
-      "y": 10,
+      "x": 82.5,
+      "y": 6.6,
       "placeName": "Unknown location",
       "mobs": [],
-      "specs": []
+      "specs": [],
+      "notes": "Found on druid type enemies"
     }
   ]
 }
