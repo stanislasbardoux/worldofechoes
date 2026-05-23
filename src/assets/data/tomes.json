@@ -2229,11 +2229,13 @@
     {
       "id": "echo-import-tome-demonic-awakening",
       "tomeId": "tome-demonic-awakening",
-      "zone": "kalimdor",
-      "x": 55.5,
-      "y": 7.5,
-      "placeName": "Unknown location",
-      "mobs": [],
+      "zone": "outland",
+      "x": 61.7,
+      "y": 42,
+      "placeName": "Throne of Kil'Jaeden - Hellfire Peninsula",
+      "mobs": [
+        "Doom Lord Kazzak"
+      ],
       "specs": []
     },
     {
