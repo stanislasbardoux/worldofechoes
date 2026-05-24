@@ -1,4 +1,5 @@
 import {
+  AfterViewInit,
   Component,
   ViewChild,
   computed,
@@ -28,10 +29,13 @@ import {
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
   protected readonly tomes = inject(TomeService);
 
   @ViewChild(MapViewerComponent) private mapViewer?: MapViewerComponent;
+
+  /** Focus target waiting for the map viewer @ViewChild to mount. */
+  private pendingFocus: FarmLocation | null = null;
 
   protected readonly selectedZoneId = signal<ZoneId>('northrend');
   protected readonly selectedLocationId = signal<string | null>(null);
@@ -90,6 +94,10 @@ export class HomeComponent {
     );
   }
 
+  ngAfterViewInit(): void {
+    this.applyPendingFocus();
+  }
+
   // ──────────────────────────────────────────────────────────────────
   // UI handlers
   // ──────────────────────────────────────────────────────────────────
@@ -115,22 +123,22 @@ export class HomeComponent {
 
   /**
    * Switch to the location's zone if needed, select it, and pan/zoom
-   * Leaflet to the right percentage coordinates once the map has had
-   * a frame to install the new image overlay.
+   * Leaflet to the right percentage coordinates. The map viewer queues
+   * the fly-to until the target zone image has finished loading.
    */
   private focusLocation(target: FarmLocation): void {
     if (target.zone !== this.selectedZoneId()) {
       this.selectedZoneId.set(target.zone);
     }
     this.selectedLocationId.set(target.id);
+    this.pendingFocus = target;
+    this.applyPendingFocus();
+  }
 
-    // Two RAFs: one for Angular to flush the change detection that
-    // swaps the zone in the map viewer, another for Leaflet to mount
-    // the new image overlay. Without both, the flyTo can no-op.
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        this.mapViewer?.flyToPercent(target.x, target.y, 2);
-      });
-    });
+  private applyPendingFocus(): void {
+    if (!this.pendingFocus || !this.mapViewer) return;
+    const target = this.pendingFocus;
+    this.pendingFocus = null;
+    this.mapViewer.flyToPercent(target.x, target.y, 2, target.zone);
   }
 }

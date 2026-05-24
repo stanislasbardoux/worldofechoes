@@ -19,6 +19,7 @@ import {
   RARITY_COLORS,
   TomeRarity,
   ZoneConfig,
+  ZoneId,
   clamp,
 } from '../../models/tome.model';
 import { TomeService } from '../../services/tome.service';
@@ -41,6 +42,13 @@ interface LoadedImage {
   url: string;
   width: number;
   height: number;
+}
+
+interface PendingFlyTo {
+  xPct: number;
+  yPct: number;
+  zoom: number;
+  zoneId: ZoneId;
 }
 
 /**
@@ -102,6 +110,8 @@ export class MapViewerComponent implements AfterViewInit, OnChanges, OnDestroy {
   private loadedImage: LoadedImage | null = null;
   /** Pending zone load — abort if the input changes again before it resolves. */
   private pendingLoadToken = 0;
+  /** Queued fly-to applied once the target zone's map is ready. */
+  private pendingFlyTo: PendingFlyTo | null = null;
 
   protected loading = true;
   protected loadError = false;
@@ -142,12 +152,22 @@ export class MapViewerComponent implements AfterViewInit, OnChanges, OnDestroy {
   // Public API (called from parent via @ViewChild)
   // ──────────────────────────────────────────────────────────────────
 
-  /** Smoothly center/zoom onto a coordinate, expressed in percentages. */
-  flyToPercent(xPct: number, yPct: number, zoom?: number): void {
-    if (!this.map || !this.loadedImage) return;
-    const latLng = this.percentToLatLng(xPct, yPct);
-    const targetZoom = zoom ?? Math.min(this.map.getMaxZoom(), 2);
-    this.map.flyTo(latLng, targetZoom, { duration: 0.6 });
+  /** Smoothly center/zoom onto a coordinate, expressed in percentages.
+   *  If the map is still loading or switching zones, the request is
+   *  queued and applied once the target zone is installed. */
+  flyToPercent(
+    xPct: number,
+    yPct: number,
+    zoom?: number,
+    zoneId: ZoneId = this.zone.id,
+  ): void {
+    this.pendingFlyTo = {
+      xPct,
+      yPct,
+      zoom: zoom ?? 2,
+      zoneId,
+    };
+    this.flushPendingFlyTo();
   }
 
   /** Reset to the default view (whole image visible). */
@@ -241,6 +261,21 @@ export class MapViewerComponent implements AfterViewInit, OnChanges, OnDestroy {
     this.renderMarkers();
     this.renderDraftPin();
     this.highlightSelected();
+
+    // fitBounds runs synchronously above; defer the fly so Leaflet has
+    // a frame to settle before we animate to the queued pin target.
+    requestAnimationFrame(() => this.flushPendingFlyTo());
+  }
+
+  private flushPendingFlyTo(): void {
+    if (!this.pendingFlyTo || !this.map || !this.loadedImage) return;
+    if (this.pendingFlyTo.zoneId !== this.zone.id) return;
+
+    const { xPct, yPct, zoom } = this.pendingFlyTo;
+    const latLng = this.percentToLatLng(xPct, yPct);
+    const targetZoom = Math.min(zoom, this.map.getMaxZoom());
+    this.map.flyTo(latLng, targetZoom, { duration: 0.6 });
+    this.pendingFlyTo = null;
   }
 
   private teardown(): void {
