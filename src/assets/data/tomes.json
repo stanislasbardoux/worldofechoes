@@ -2953,6 +2953,23 @@
       "mobs": [],
       "specs": [],
       "notes": "Found on druid type enemies"
+    },
+    {
+      "id": "80f76a65-c46b-47b1-b510-b7bd944ba204",
+      "tomeId": "tome-armor-mastery",
+      "zone": "eastern-kingdoms",
+      "x": 42.6,
+      "y": 61.8,
+      "placeName": "The Grinding Quarry - Blackrock Mountain",
+      "mobs": [
+        "Anvilrage Enforcer"
+      ],
+      "specs": [
+        "tank",
+        "caster-dps",
+        "melee-dps",
+        "ranged-dps"
+      ]
     }
   ]
 }
